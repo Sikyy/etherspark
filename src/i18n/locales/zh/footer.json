@@ -1,0 +1,29 @@
+{
+  "slogan": "以太花火，点燃未来",
+  "address": "Москва, Каширское шоссе 61к3А, павильон Б26",
+  "contact": {
+    "phone": "电话: +7 (996) 713-12-38",
+    "email": "邮箱: info@etherspark.ru"
+  },
+  "sections": {
+    "products": "产品系列",
+    "support": "帮助与支持"
+  },
+  "links": {
+    "products": {
+      "tools": "工具",
+      "scooter": "电动滑板车",
+      "hair": "美发产品",
+      "pet": "宠物用品",
+      "sound": "声学",
+      "watch": "手表",
+      "invehicle": "车载用品"
+    },
+    "support": {
+      "about": "关于我们",
+      "contact": "联系我们",
+      "business": "对于企业"
+    }
+  },
+  "copyright": "© {year} EtherSpark — 官方网站。保留所有权利。隐私政策。使用条款。"
+} 

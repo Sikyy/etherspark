@@ -1,0 +1,29 @@
+{
+  "slogan": "Igniting the Future",
+  "address": "Moscow, Kashirskoye Highway 61k3A, Pavilion B26",
+  "contact": {
+    "phone": "Phone: +7 (996) 713-12-38",
+    "email": "Email: info@etherspark.ru"
+  },
+  "sections": {
+    "products": "Product Series",
+    "support": "Help & Support"
+  },
+  "links": {
+    "products": {
+      "tools": "Tools",
+      "scooter": "Electric Scooters",
+      "hair": "Hair Products",
+      "pet": "Pet Supplies",
+      "sound": "Audio",
+      "watch": "Watches",
+      "invehicle": "In-Vehicle"
+    },
+    "support": {
+      "about": "About Us",
+      "contact": "Contact Us",
+      "business": "For Business"
+    }
+  },
+  "copyright": "© {year} EtherSpark — Official Website. All Rights Reserved. Privacy Policy. Terms of Use."
+} 

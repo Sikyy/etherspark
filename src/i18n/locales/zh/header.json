@@ -1,0 +1,14 @@
+{
+  "menu": "菜单",
+  "close": "关闭",
+  "nav": {
+    "news": "新品",
+    "tools": "工具",
+    "scooter": "电动滑板车",
+    "hair": "美发产品",
+    "pet": "宠物用品",
+    "sound": "声学",
+    "watch": "手表",
+    "invehicle": "车载用品"
+  }
+} 

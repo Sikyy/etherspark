@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { useTranslation } from 'react-i18next';
+import GlobalStyles from './styles/GlobalStyles';
+import theme from './styles/theme';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import ProductList from './pages/Products/ProductList';
+import ProductDetail from './pages/Products/ProductDetail';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Business from './pages/Business/Business';
+import './i18n'; // 导入i18n配置
 
 function App() {
+  const { i18n } = useTranslation();
+  
+  useEffect(() => {
+    // 打印当前加载的语言和资源
+    console.log('App loaded with language:', i18n.language);
+    console.log('Available languages:', i18n.languages);
+    console.log('Namespaces:', i18n.options.ns);
+  }, [i18n]);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/:category" element={<ProductList />} />
+          <Route path="/:category/:productId" element={<ProductDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/careers" element={<Business />} />
+          {/* 其他路由可以在这里添加 */}
+        </Routes>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
 }
 

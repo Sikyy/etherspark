@@ -1,0 +1,14 @@
+{
+  "menu": "Menu",
+  "close": "Close",
+  "nav": {
+    "news": "New Products",
+    "tools": "Tools",
+    "scooter": "Electric Scooters",
+    "hair": "Hair Products",
+    "pet": "Pet Supplies",
+    "sound": "Audio",
+    "watch": "Watches",
+    "invehicle": "In-Vehicle"
+  }
+} 
