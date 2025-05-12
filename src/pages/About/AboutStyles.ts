@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutHeader = styled.div`
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.primary};
   padding: ${props => props.theme.spacing.xxlarge} ${props => props.theme.spacing.large};
   text-align: center;
   margin-bottom: ${props => props.theme.spacing.xxlarge};

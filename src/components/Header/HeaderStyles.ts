@@ -32,12 +32,14 @@ export const HeaderBottom = styled.div`
 `;
 
 export const Logo = styled.div`
-  display: inline-block;
-  margin: 10px 0 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px;
+  width: 100%;
   
   img {
-    height: 50px;
-    width: 320px;
+    height: auto;
+    width: 400px;
     display: block;
   }
 `;

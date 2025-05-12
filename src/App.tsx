@@ -6,9 +6,11 @@ import GlobalStyles from './styles/GlobalStyles';
 import theme from './styles/theme';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home/Home';
 import ProductList from './pages/Products/ProductList';
-import ProductDetail from './pages/Products/ProductDetail';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
+import ProductLinks from './pages/Products/ProductLinks';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Business from './pages/Business/Business';
@@ -28,10 +30,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<ProductLinks />} />
           <Route path="/:category" element={<ProductList />} />
+          <Route path="/product/:productId" element={<ProductDetail />} />
           <Route path="/:category/:productId" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

@@ -1,11 +1,31 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "EtherSpark",
+  "name": "EtherSpark - 智能生活的全新定义",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "favicons/favicon64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "favicons/favicon32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicons/favicon16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicons/favicon8.png",
+      "type": "image/png",
+      "sizes": "8x8"
     },
     {
       "src": "logo192.png",

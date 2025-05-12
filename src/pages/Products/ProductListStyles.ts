@@ -11,7 +11,7 @@ export const ProductListContainer = styled.div`
 `;
 
 export const ProductListHeader = styled.div`
-  margin-bottom: ${props => props.theme.spacing.xlarge};
+  margin-bottom: 150px;
   text-align: center;
 `;
 
@@ -27,15 +27,20 @@ export const ProductListTitle = styled.h1`
 export const ProductGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: ${props => props.theme.spacing.xlarge};
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
   
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (max-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+  @media (max-width: 576px) {
     grid-template-columns: 1fr;
-    gap: ${props => props.theme.spacing.xxlarge};
   }
 `;
 

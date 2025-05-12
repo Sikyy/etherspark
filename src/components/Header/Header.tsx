@@ -31,13 +31,16 @@ const Header: React.FC = () => {
       <HeaderTop>
         <Logo>
           <Link to="/">
-            <img src="/ES_Characters_White.png" alt="EtherSpark" />
+            <img src="/es_logo.png" alt="EtherSpark" />
           </Link>
         </Logo>
       </HeaderTop>
 
       <HeaderBottom>
         <Navigation>
+          {/* <NavItem>
+            <Link to="/products">{t('nav.products') || '产品展示'}</Link>
+          </NavItem> */}
           <NavItem>
             <Link to="/news">{t('nav.news')}</Link>
           </NavItem>
@@ -70,6 +73,9 @@ const Header: React.FC = () => {
 
         {mobileMenuOpen && (
           <MobileMenu>
+            <NavItem>
+              <Link to="/products">{t('nav.products') || '产品展示'}</Link>
+            </NavItem>
             <NavItem>
               <Link to="/news">{t('nav.news')}</Link>
             </NavItem>

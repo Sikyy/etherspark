@@ -1,33 +1,130 @@
+export interface ProductImage {
+  src: string;
+  alt?: string;
+  caption?: string;
+}
+
 export interface Product {
   id: string;
+  numericId: number;
   name: string;
   description: string;
   price: string;
   image: string;
   gallery?: ProductImage[];
   features?: string[];
-  specifications?: Record<string, string>;
-}
-
-export interface ProductImage {
-  src: string;
-  alt: string;
-  caption?: string;
+  specifications?: { [key: string]: string };
+  tag?: string;
 }
 
 export interface ProductData {
-  [key: string]: Product[];
+  [category: string]: Product[];
 }
+
+// 分类标题
+export const categoryTitles: { [key: string]: string } = {
+  news: '新品',
+  tools: '工具',
+  scooter: '电动滑板车',
+  hair: '美发产品',
+  pet: '宠物用品',
+  sound: '声学',
+  watch: '手表',
+  invehicle: '车载用品'
+};
 
 // 模拟产品数据
 export const productData: ProductData = {
+  featured: [
+    {
+      id: 'featured-1',
+      numericId: 1,
+      name: '粉丝合集 BORK T782',
+      description: '高效双面烤制，智能温控系统',
+      price: '¥9,999',
+      image: '/images/products/1.png',
+      gallery: [
+        {
+          src: '/images/products/1.png',
+          alt: '粉丝合集 BORK T782 - 正面视图',
+          caption: '现代简约设计，高品质不锈钢外壳'
+        },
+        {
+          src: '/images/products/2.png',
+          alt: '粉丝合集 BORK T782 - 侧面视图',
+          caption: '纤薄设计，易于存放'
+        },
+        {
+          src: '/images/products/3.png',
+          alt: '粉丝合集 BORK T782 - 使用场景',
+          caption: '高效烤制，多种烤制模式'
+        }
+      ],
+      features: [
+        '独特的双面烤制技术，缩短烤制时间50%',
+        '智能温控系统，精确控温至1°C',
+        '6种烤制模式，满足不同食材需求',
+        '大尺寸烤盘，一次可烤制多片面包',
+        '高品质不锈钢外壳，耐用易清洁',
+        '独立式集屑盘，清洁方便'
+      ],
+      specifications: {
+        '尺寸': '32 × 26 × 21 厘米',
+        '重量': '2.8 千克',
+        '功率': '1500 瓦',
+        '电压': '220 伏',
+        '烤制模式': '6种',
+        '材质': '不锈钢/高温塑料',
+        '保修期': '2年'
+      }
+    },
+    {
+      id: 'featured-2',
+      numericId: 2,
+      name: '台扇 BORK P513 gg',
+      description: '智能控温静音设计，远程控制',
+      price: '¥14,000',
+      image: '/images/products/2.png',
+      gallery: [
+        {
+          src: '/images/products/2.png',
+          alt: '台扇 BORK P513 gg - 正面视图',
+          caption: '现代简约设计，完美融入各种家居风格'
+        },
+        {
+          src: '/images/products/5.png',
+          alt: '台扇 BORK P513 gg - 控制面板',
+          caption: '智能触控面板，操作便捷'
+        }
+      ],
+      features: [
+        '智能温控，根据环境自动调节风速',
+        '超静音设计，运行噪音低至20分贝',
+        '9档风速调节，满足不同需求',
+        '远程控制，手机APP随时操作',
+        '定时功能，支持1-8小时定时',
+        '自然风模式，模拟自然微风效果'
+      ],
+      specifications: {
+        '尺寸': '36 × 30 × 88 厘米',
+        '重量': '3.5 千克',
+        '功率': '45 瓦',
+        '电压': '220 伏',
+        '风速档位': '9档',
+        '噪音': '≤ 20 分贝',
+        '摇头范围': '90°'
+      }
+    }
+  ],
   news: [
     {
       id: 'news-1',
+      numericId: 101,
       name: '智能家居控制中心',
       description: '全方位智能家居管理系统，支持多种设备连接',
       price: '¥2,999',
       image: '/images/products/1.png',
+      tag: '新品',
       gallery: [
         {
           src: '/images/products/1.png',
@@ -69,10 +166,11 @@ export const productData: ProductData = {
     },
     {
       id: 'news-2',
+      numericId: 102,
       name: '空气净化系统',
       description: '高效过滤PM2.5，杀菌除味，智能监测空气质量',
       price: '¥3,499',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=空气净化系统',
+      image: '/images/products/5.png',
       gallery: [
         {
           src: 'https://via.placeholder.com/800x600/333/fff?text=空气净化系统-正面',
@@ -113,6 +211,7 @@ export const productData: ProductData = {
     },
     {
       id: 'news-3',
+      numericId: 103,
       name: '智能音响系统',
       description: '360°环绕音效，智能语音控制，多房间同步播放',
       price: '¥4,299',
@@ -152,6 +251,7 @@ export const productData: ProductData = {
     },
     {
       id: 'news-4',
+      numericId: 104,
       name: '全自动咖啡机',
       description: '智能研磨，精准控温，多种咖啡模式一键制作',
       price: '¥5,999',
@@ -159,6 +259,7 @@ export const productData: ProductData = {
     },
     {
       id: 'news-5',
+      numericId: 105,
       name: '全自动咖啡机-2',
       description: '智能研磨，精准控温，多种咖啡模式一键制作',
       price: '¥5,999',
@@ -168,87 +269,50 @@ export const productData: ProductData = {
   tools: [
     {
       id: 'tools-1',
-      name: '智能手表礼盒',
-      description: '高精度健康监测，长续航，多种表盘可选',
-      price: '¥2,499',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=智能手表礼盒'
+      numericId: 201,
+      name: '智能电动螺丝刀',
+      description: '自动识别螺丝类型，精准调节扭矩',
+      price: '¥599',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=智能电动螺丝刀',
+      tag: '新品'
     },
     {
       id: 'tools-2',
-      name: '便携式投影仪',
-      description: '高清画质，智能对焦，内置扬声器',
-      price: '¥3,299',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=便携式投影仪'
+      numericId: 202,
+      name: '多功能电钻',
+      description: '无刷电机，40V锂电池，持久耐用',
+      price: '¥1,299',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=多功能电钻'
     },
     {
       id: 'tools-3',
-      name: '多功能按摩椅',
-      description: '全身按摩，热敷功能，智能定制按摩方案',
-      price: '¥8,999',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=多功能按摩椅'
+      numericId: 203,
+      name: '激光水平仪',
+      description: '绿光技术，高精度自动校准，户内户外均可使用',
+      price: '¥899',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=激光水平仪'
     },
     {
       id: 'tools-4',
-      name: '智能厨房秤',
-      description: '精准测量，多种单位转换，食谱推荐',
-      price: '¥399',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=智能厨房秤'
+      numericId: 204,
+      name: '电动抛光机',
+      description: '智能恒速控制，多种抛光头可更换',
+      price: '¥799',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=电动抛光机'
     }
   ],
   scooter: [
     {
       id: 'scooter-1',
-      name: '智能烤箱',
-      description: '精准温控，多种烹饪模式，远程控制',
-      price: '¥4,599',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=智能烤箱',
-      gallery: [
-        {
-          src: 'https://via.placeholder.com/800x600/333/fff?text=智能烤箱-正面',
-          alt: '智能烤箱-正面视图',
-          caption: '大容量设计，触控操作面板'
-        },
-        {
-          src: 'https://via.placeholder.com/800x600/333/fff?text=智能烤箱-内部',
-          alt: '智能烤箱-内部视图',
-          caption: '多层烤架设计，均匀受热'
-        },
-        {
-          src: 'https://via.placeholder.com/800x600/333/fff?text=智能烤箱-控制面板',
-          alt: '智能烤箱-控制面板特写',
-          caption: '高清触控显示屏，直观操作界面'
-        },
-        {
-          src: 'https://via.placeholder.com/800x600/333/fff?text=智能烤箱-烹饪效果',
-          alt: '智能烤箱-烹饪效果',
-          caption: '完美烘焙效果，色香味俱全'
-        }
-      ],
-      features: [
-        '40升大容量，满足多种烹饪需求',
-        '精准温控系统，温差控制在±1℃',
-        '14种烹饪模式，一键切换',
-        'AI智能识别食材，自动推荐烹饪程序',
-        '远程控制功能，手机APP实时监控烹饪过程',
-        '内置食谱库，300+精选菜谱'
-      ],
-      specifications: {
-        '型号': 'ES-SO001',
-        '尺寸': '590 × 450 × 400 毫米',
-        '容量': '40升',
-        '重量': '15千克',
-        '额定功率': '2000W',
-        '温控范围': '30-250℃',
-        '定时范围': '1-120分钟',
-        '烹饪模式': '14种',
-        '控制方式': '触控屏/APP远程控制',
-        '电源': 'AC 220V',
-        '颜色': '银灰色',
-        '保修': '3年全球联保'
-      }
+      numericId: 301,
+      name: '食物搅拌机',
+      description: '高速马达，多功能附件，易于清洁',
+      price: '¥1,299',
+      image: '/images/products/1.png'
     },
     {
       id: 'scooter-2',
+      numericId: 302,
       name: '高速破壁机',
       description: '强劲马达，多功能搅拌，智能程序控制',
       price: '¥2,799',
@@ -256,6 +320,7 @@ export const productData: ProductData = {
     },
     {
       id: 'scooter-3',
+      numericId: 303,
       name: '智能电饭煲',
       description: 'IH加热技术，智能控温，多种煮饭模式',
       price: '¥1,999',
@@ -263,6 +328,7 @@ export const productData: ProductData = {
     },
     {
       id: 'scooter-4',
+      numericId: 304,
       name: '冷萃咖啡机',
       description: '精准控温，定时浸泡，保留咖啡原香',
       price: '¥899',
@@ -272,6 +338,7 @@ export const productData: ProductData = {
   hair: [
     {
       id: 'hair-1',
+      numericId: 401,
       name: '智能空调',
       description: '变频节能，远程控制，空气净化功能',
       price: '¥5,999',
@@ -324,6 +391,7 @@ export const productData: ProductData = {
     },
     {
       id: 'hair-2',
+      numericId: 402,
       name: '智能窗帘',
       description: '自动感应，定时控制，静音电机',
       price: '¥1,599',
@@ -331,6 +399,7 @@ export const productData: ProductData = {
     },
     {
       id: 'hair-3',
+      numericId: 403,
       name: '智能门锁',
       description: '多种解锁方式，防盗报警，远程控制',
       price: '¥2,399',
@@ -338,6 +407,7 @@ export const productData: ProductData = {
     },
     {
       id: 'hair-4',
+      numericId: 404,
       name: '智能扫地机器人',
       description: '激光导航，深度清洁，自动回充',
       price: '¥3,299',
@@ -347,6 +417,7 @@ export const productData: ProductData = {
   pet: [
     {
       id: 'pet-1',
+      numericId: 501,
       name: '智能体脂秤',
       description: '精准测量，多项身体数据分析，健康管理',
       price: '¥599',
@@ -354,6 +425,7 @@ export const productData: ProductData = {
     },
     {
       id: 'pet-2',
+      numericId: 502,
       name: '智能按摩器',
       description: '多种按摩模式，热敷功能，智能控制',
       price: '¥1,299',
@@ -361,6 +433,7 @@ export const productData: ProductData = {
     },
     {
       id: 'pet-3',
+      numericId: 503,
       name: '智能睡眠监测仪',
       description: '全面监测睡眠质量，提供改善建议',
       price: '¥899',
@@ -368,6 +441,7 @@ export const productData: ProductData = {
     },
     {
       id: 'pet-4',
+      numericId: 504,
       name: '空气质量检测仪',
       description: '实时监测空气质量，智能提醒，历史数据分析',
       price: '¥799',
@@ -377,36 +451,41 @@ export const productData: ProductData = {
   sound: [
     {
       id: 'sound-1',
-      name: '便携式净水器',
-      description: '高效过滤，便携设计，长效使用',
-      price: '¥699',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=便携式净水器'
+      numericId: 601,
+      name: '智能扫地机器人',
+      description: '激光导航，智能规划路径，自动回充',
+      price: '¥2,999',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=智能扫地机器人'
     },
     {
       id: 'sound-2',
-      name: '智能登山背包',
-      description: '防水材质，智能定位，太阳能充电',
-      price: '¥1,499',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=智能登山背包'
+      numericId: 602,
+      name: '洗碗机',
+      description: '大容量，低噪音，高温除菌',
+      price: '¥4,999',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=洗碗机'
     },
     {
       id: 'sound-3',
-      name: '便携式烧烤炉',
-      description: '高效加热，易于清洁，便携设计',
-      price: '¥899',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=便携式烧烤炉'
+      numericId: 603,
+      name: '智能洗衣机',
+      description: '变频电机，智能投放洗涤剂，APP远程控制',
+      price: '¥3,999',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=智能洗衣机'
     },
     {
       id: 'sound-4',
-      name: '智能保温杯',
-      description: '长效保温，温度显示，智能提醒饮水',
-      price: '¥399',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=智能保温杯'
+      numericId: 604,
+      name: '垃圾处理器',
+      description: '强力粉碎，静音设计，抗菌材质',
+      price: '¥1,999',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=垃圾处理器'
     }
   ],
-  'watch': [
+  watch: [
     {
       id: 'watch-1',
+      numericId: 701,
       name: 'EtherSpark智能家居套装',
       description: '全套智能家居解决方案，一键控制全屋设备',
       price: '¥9,999',
@@ -414,6 +493,7 @@ export const productData: ProductData = {
     },
     {
       id: 'watch-2',
+      numericId: 702,
       name: '智能厨房套装',
       description: '厨房设备智能化解决方案，提升烹饪体验',
       price: '¥7,999',
@@ -421,6 +501,7 @@ export const productData: ProductData = {
     },
     {
       id: 'watch-3',
+      numericId: 703,
       name: '智能卧室套装',
       description: '营造舒适睡眠环境，智能调节光线和温度',
       price: '¥5,999',
@@ -428,6 +509,7 @@ export const productData: ProductData = {
     },
     {
       id: 'watch-4',
+      numericId: 704,
       name: '智能办公套装',
       description: '提升办公效率，创造舒适办公环境',
       price: '¥6,999',
@@ -437,43 +519,35 @@ export const productData: ProductData = {
   invehicle: [
     {
       id: 'invehicle-1',
-      name: '便携式翻译机',
-      description: '实时翻译，支持多种语言，离线使用',
-      price: '¥1,299',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=便携式翻译机'
+      numericId: 801,
+      name: '车载空气净化器',
+      description: '高效过滤车内空气污染物，降低甲醛浓度',
+      price: '¥999',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=车载空气净化器'
     },
     {
       id: 'invehicle-2',
-      name: '智能旅行箱',
-      description: '指纹解锁，GPS定位，内置电子秤',
-      price: '¥2,499',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=智能旅行箱'
+      numericId: 802,
+      name: '车载冰箱',
+      description: '快速制冷，静音设计，大容量收纳',
+      price: '¥1,999',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=车载冰箱'
     },
     {
       id: 'invehicle-3',
-      name: '便携式蓝牙音箱',
-      description: '高品质音效，防水设计，长效电池',
+      numericId: 803,
+      name: '车载咖啡机',
+      description: '便携设计，快速制作咖啡，多种口味选择',
       price: '¥899',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=便携式蓝牙音箱'
+      image: 'https://via.placeholder.com/400x300/333/fff?text=车载咖啡机'
     },
     {
       id: 'invehicle-4',
-      name: '旅行适配器',
-      description: '全球通用，多口输出，智能识别电压',
-      price: '¥299',
-      image: 'https://via.placeholder.com/400x300/333/fff?text=旅行适配器'
+      numericId: 804,
+      name: '车载吸尘器',
+      description: '强大吸力，无线设计，方便清洁车内卫生',
+      price: '¥599',
+      image: 'https://via.placeholder.com/400x300/333/fff?text=车载吸尘器'
     }
   ],
-};
-
-// 分类名称映射
-export const categoryTitles: Record<string, string> = {
-  news: '新品',
-  tools: '工具',
-  scooter: '电动滑板车',
-  hair: '美发产品',
-  pet: '宠物用品',
-  sound: '声学',
-  watch: '手表',
-  invehicle: '车载用品'
 }; 

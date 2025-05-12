@@ -5,7 +5,7 @@ export const BusinessContainer = styled.div`
 `;
 
 export const BusinessHeader = styled.div`
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.primary};
   padding: ${props => props.theme.spacing.xxlarge} ${props => props.theme.spacing.large};
   text-align: center;
   margin-bottom: ${props => props.theme.spacing.xxlarge};
@@ -226,7 +226,7 @@ export const TestimonialCompany = styled.p`
 `;
 
 export const CTASection = styled.section`
-  background-color: ${props => props.theme.colors.accent};
+  background-color: ${props => props.theme.colors.primary};
   padding: ${props => props.theme.spacing.xxlarge} ${props => props.theme.spacing.large};
   border-radius: 4px;
   margin-bottom: ${props => props.theme.spacing.xxlarge};
