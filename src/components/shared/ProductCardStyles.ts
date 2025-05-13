@@ -19,7 +19,7 @@ export const ProductImageContainer = styled.div`
   height: 400px;
   padding: 0;
   overflow: hidden;
-  background-color: #2b2b2b;
+  background-color: #161516;
   border-radius: 12px;
   margin-bottom: 20px;
 `;
@@ -30,6 +30,7 @@ export const ProductImage = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #161516;
   transition: transform 0.5s ease;
   
   ${ProductCard}:hover & {

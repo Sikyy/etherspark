@@ -9,15 +9,6 @@ import {
   HeroCarousel,
   ScrollIndicator,
   ProductsGrid,
-  ProductCard,
-  FeaturedProductCard,
-  ProductImageWrapper,
-  ProductImage,
-  ProductInfo,
-  ProductTitle,
-  ProductDescription,
-  ProductTag,
-  AddToCartButton,
   FadeInContainer,
   NewsletterSection,
   NewsletterContent,
@@ -25,19 +16,27 @@ import {
   NewsletterDescription
 } from './HomeStyles';
 
-// 产品类型定义
-interface Product {
-  id: number;
-  numericId: number;
-  name: string;
-  image: string;
-  price: string;
-  featured?: boolean;
-  tag?: string;
-}
+// 引入Tab页面下的产品卡样式
+import { 
+  ProductCard, 
+  ProductImageContainer,
+  ProductImage, 
+  ProductInfo, 
+  ProductName,
+  ProductPrice,
+  ProductStatus,
+  ColorOptions,
+  ColorOption,
+  AddToCartButton
+} from '../../components/shared/ProductCardStyles';
+
+// 引入产品数据
+import { productData, Product } from '../../pages/Products/productData';
 
 const Home: React.FC = () => {
   const [loaded, setLoaded] = useState(false);
+  // 使用productData中的home分类产品数据
+  const products = productData.home;
 
   const heroImages = [
     {
@@ -54,62 +53,6 @@ const Home: React.FC = () => {
       url: '/images/products/3.png',
       title: '科技改变生活',
       subtitle: '让科技成为生活的得力助手'
-    }
-  ];
-
-  const products: Product[] = [
-    {
-      id: 1,
-      numericId: 1,
-      name: '粉丝合集 BORK T782',
-      image: '/images/products/1.png',
-      price: '¥9,999',
-      featured: true,
-      tag: '新品'
-    },
-    {
-      id: 2,
-      numericId: 2,
-      name: '台扇 BORK P513 gg',
-      image: '/images/products/2.png',
-      price: '14,000元'
-    },
-    {
-      id: 3,
-      numericId: 3,
-      name: '空气净化加湿器 BORK A705',
-      image: '/images/products/5.png',
-      price: '14,000元',
-      tag: '即将上市'
-    },
-    {
-      id: 4,
-      numericId: 4,
-      name: '空气净化加湿器 BORK A802 RAIN',
-      image: '/images/products/7.png',
-      price: '36,720元'
-    },
-    {
-      id: 5,
-      numericId: 5,
-      name: '加湿器 BORK H503',
-      image: '/images/products/humidifier.png',
-      price: '24,000元',
-      tag: '折扣'
-    },
-    {
-      id: 6,
-      numericId: 6,
-      name: '音箱机 BORK HF700',
-      image: '/images/products/speaker.png',
-      price: '36,720元'
-    },
-    {
-      id: 7,
-      numericId: 7,
-      name: '自主空气清洁站 BORK V850',
-      image: '/images/products/air-cleaner.png',
-      price: '29,760元'
     }
   ];
 
@@ -131,6 +74,18 @@ const Home: React.FC = () => {
   // 产品卡片渐入动画的延迟
   const getAnimationDelay = (index: number) => `${0.1 + index * 0.1}s`;
 
+  // 处理滚动到下一张图片的函数
+  const scrollToNextSection = (nextIndex: number) => {
+    const nextSection = document.getElementById(`hero-${nextIndex}`);
+    if (nextSection) {
+      // 直接使用scrollIntoView方法，确保完全对齐
+      nextSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <HomeContainer>
       <HeroCarousel>
@@ -143,8 +98,8 @@ const Home: React.FC = () => {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
-              height: index === 0 ? '795px' : '801px',
-              minHeight: index === 0 ? '795px' : '801px'
+              height: '100vh', // 使用视口高度确保一致性
+              minHeight: '800px'
             }}
           >
             <HeroContent>
@@ -152,12 +107,7 @@ const Home: React.FC = () => {
               <HeroSubtitle>{hero.subtitle}</HeroSubtitle>
               {index < heroImages.length - 1 && (
                 <ScrollIndicator 
-                  onClick={() => {
-                    const nextSection = document.getElementById(`hero-${index + 1}`);
-                    if (nextSection) {
-                      nextSection.scrollIntoView();
-                    }
-                  }}
+                  onClick={() => scrollToNextSection(index + 1)}
                 />
               )}
             </HeroContent>
@@ -172,34 +122,50 @@ const Home: React.FC = () => {
             style={{ 
               animationDelay: getAnimationDelay(index),
               gridColumn: product.featured ? 'span 2' : 'auto',
-              gridRow: product.featured ? 'span 2' : 'auto'
+              gridRow: 'auto'
             }}
           >
-            {product.featured ? (
-              <FeaturedProductCard to={`/product/${product.numericId}`}>
-                <ProductImageWrapper>
-                  <ProductImage style={{backgroundImage: `url("${product.image}")`}} />
-                </ProductImageWrapper>
-                <AddToCartButton />
-                {product.tag && <ProductTag>{product.tag}</ProductTag>}
-                <ProductInfo>
-                  <ProductTitle>{product.name}</ProductTitle>
-                  {product.price && <ProductDescription>{product.price}</ProductDescription>}
-                </ProductInfo>
-              </FeaturedProductCard>
-            ) : (
-              <ProductCard to={`/product/${product.numericId}`}>
-                <ProductImageWrapper>
-                  <ProductImage style={{backgroundImage: `url("${product.image}")`}} />
-                </ProductImageWrapper>
-                <AddToCartButton />
-                {product.tag && <ProductTag>{product.tag}</ProductTag>}
-                <ProductInfo>
-                  <ProductTitle>{product.name}</ProductTitle>
-                  {product.price && <ProductDescription>{product.price}</ProductDescription>}
-                </ProductInfo>
-              </ProductCard>
-            )}
+            <ProductCard to={`/product/${product.numericId}`} style={{ height: '100%' }}>
+              <AddToCartButton />
+              <ProductImageContainer style={{ 
+                height: '400px',
+                borderRadius: '12px'
+              }}>
+                <ProductImage style={{ backgroundImage: `url("${product.image}")` }} />
+                {product.colorOptions && product.colorOptions.length > 0 && (
+                  <ColorOptions>
+                    {product.colorOptions.map((colorOption, index) => (
+                      <ColorOption 
+                        key={index} 
+                        color={colorOption.color} 
+                        active={index === 0}
+                        title={colorOption.name}
+                      />
+                    ))}
+                  </ColorOptions>
+                )}
+              </ProductImageContainer>
+              <ProductInfo>
+                <ProductName style={{ 
+                  fontSize: product.featured ? '20px' : '16px',
+                  fontWeight: product.featured ? '500' : '400'
+                }}>
+                  {product.name}
+                </ProductName>
+                <ProductPrice style={{
+                  fontSize: product.featured ? '16px' : '14px'
+                }}>
+                  {product.price}
+                </ProductPrice>
+                {product.tag && (
+                  <ProductStatus style={{
+                    fontSize: product.featured ? '14px' : '12px'
+                  }}>
+                    {product.tag}
+                  </ProductStatus>
+                )}
+              </ProductInfo>
+            </ProductCard>
           </FadeInContainer>
         ))}
       </ProductsGrid>

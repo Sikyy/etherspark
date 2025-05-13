@@ -4,6 +4,12 @@ export interface ProductImage {
   caption?: string;
 }
 
+// 颜色选项类型定义
+export interface ColorOption {
+  color: string;
+  name: string;
+}
+
 export interface Product {
   id: string;
   numericId: number;
@@ -15,6 +21,8 @@ export interface Product {
   features?: string[];
   specifications?: { [key: string]: string };
   tag?: string;
+  featured?: boolean;
+  colorOptions?: ColorOption[];
 }
 
 export interface ProductData {
@@ -30,7 +38,8 @@ export const categoryTitles: { [key: string]: string } = {
   pet: '宠物用品',
   sound: '声学',
   watch: '手表',
-  invehicle: '车载用品'
+  invehicle: '车载用品',
+  home: '主页产品'
 };
 
 // 模拟产品数据
@@ -76,7 +85,14 @@ export const productData: ProductData = {
         '烤制模式': '6种',
         '材质': '不锈钢/高温塑料',
         '保修期': '2年'
-      }
+      },
+      featured: true,
+      tag: '新品',
+      colorOptions: [
+        { color: '#E2DFDA', name: '米白色' },
+        { color: '#544F45', name: '深灰色' },
+        { color: '#9A8678', name: '棕色' }
+      ]
     },
     {
       id: 'featured-2',
@@ -113,7 +129,12 @@ export const productData: ProductData = {
         '风速档位': '9档',
         '噪音': '≤ 20 分贝',
         '摇头范围': '90°'
-      }
+      },
+      featured: true,
+      colorOptions: [
+        { color: '#1A1A1A', name: '黑色' },
+        { color: '#FFFFFF', name: '白色' }
+      ]
     }
   ],
   news: [
@@ -550,4 +571,168 @@ export const productData: ProductData = {
       image: 'https://via.placeholder.com/400x300/333/fff?text=车载吸尘器'
     }
   ],
-}; 
+  home: [
+    {
+      id: 'home-1',
+      numericId: 1,
+      name: '粉丝合集 BORK T782',
+      description: '高效双面烤制，智能温控系统',
+      price: '¥9,999',
+      image: '/images/products/1.png',
+      featured: true,
+      tag: '新品',
+      colorOptions: [
+        { color: '#E2DFDA', name: '米白色' },
+        { color: '#544F45', name: '深灰色' },
+        { color: '#9A8678', name: '棕色' }
+      ]
+    },
+    {
+      id: 'home-2',
+      numericId: 2,
+      name: '台扇 BORK P513 gg',
+      description: '智能控温静音设计，远程控制',
+      price: '14,000元',
+      image: '/images/products/2.png',
+      colorOptions: [
+        { color: '#1A1A1A', name: '黑色' },
+        { color: '#FFFFFF', name: '白色' }
+      ]
+    },
+    {
+      id: 'home-3',
+      numericId: 3,
+      name: '空气净化加湿器 BORK A705',
+      description: '高效净化，智能加湿，静音设计',
+      price: '14,000元',
+      image: '/images/products/5.png',
+      tag: '即将上市'
+    },
+    {
+      id: 'home-4',
+      numericId: 4,
+      name: '空气净化加湿器 BORK A802 RAIN',
+      description: '高效净化，智能加湿，静音设计',
+      price: '36,720元',
+      image: '/images/products/7.png'
+    },
+    {
+      id: 'home-5',
+      numericId: 5,
+      name: '加湿器 BORK H503',
+      description: '大容量水箱，智能湿度控制',
+      price: '24,000元',
+      image: '/images/products/humidifier.png',
+      tag: '折扣',
+      colorOptions: [
+        { color: '#FE5000', name: '橙色' },
+        { color: '#E2DFDA', name: '米白色' }
+      ]
+    },
+    {
+      id: 'home-6',
+      numericId: 6,
+      name: '音箱机 BORK HF700',
+      description: '高保真音质，智能语音控制',
+      price: '36,720元',
+      image: '/images/products/speaker.png'
+    },
+    {
+      id: 'home-7',
+      numericId: 7,
+      name: '自主空气清洁站 BORK V850',
+      description: '高效过滤，智能控制，静音设计',
+      price: '29,760元',
+      image: '/images/products/air-cleaner.png'
+    }
+  ],
+};
+
+// 为featured产品添加颜色选项
+productData.featured[0].colorOptions = [
+  { color: '#E2DFDA', name: '米白色' },
+  { color: '#544F45', name: '深灰色' },
+  { color: '#9A8678', name: '棕色' }
+];
+
+productData.featured[1].colorOptions = [
+  { color: '#1A1A1A', name: '黑色' },
+  { color: '#FFFFFF', name: '白色' }
+];
+
+// 添加主页产品数据
+productData.home = [
+  {
+    id: 'home-1',
+    numericId: 1,
+    name: '粉丝合集 BORK T782',
+    description: '高效双面烤制，智能温控系统',
+    price: '¥9,999',
+    image: '/images/products/1.png',
+    featured: true,
+    tag: '新品',
+    colorOptions: [
+      { color: '#E2DFDA', name: '米白色' },
+      { color: '#544F45', name: '深灰色' },
+      { color: '#9A8678', name: '棕色' }
+    ]
+  },
+  {
+    id: 'home-2',
+    numericId: 2,
+    name: '台扇 BORK P513 gg',
+    description: '智能控温静音设计，远程控制',
+    price: '14,000元',
+    image: '/images/products/2.png',
+    colorOptions: [
+      { color: '#1A1A1A', name: '黑色' },
+      { color: '#FFFFFF', name: '白色' }
+    ]
+  },
+  {
+    id: 'home-3',
+    numericId: 3,
+    name: '空气净化加湿器 BORK A705',
+    description: '高效净化，智能加湿，静音设计',
+    price: '14,000元',
+    image: '/images/products/5.png',
+    tag: '即将上市'
+  },
+  {
+    id: 'home-4',
+    numericId: 4,
+    name: '空气净化加湿器 BORK A802 RAIN',
+    description: '高效净化，智能加湿，静音设计',
+    price: '36,720元',
+    image: '/images/products/7.png'
+  },
+  {
+    id: 'home-5',
+    numericId: 5,
+    name: '加湿器 BORK H503',
+    description: '大容量水箱，智能湿度控制',
+    price: '24,000元',
+    image: '/images/products/humidifier.png',
+    tag: '折扣',
+    colorOptions: [
+      { color: '#FE5000', name: '橙色' },
+      { color: '#E2DFDA', name: '米白色' }
+    ]
+  },
+  {
+    id: 'home-6',
+    numericId: 6,
+    name: '音箱机 BORK HF700',
+    description: '高保真音质，智能语音控制',
+    price: '36,720元',
+    image: '/images/products/speaker.png'
+  },
+  {
+    id: 'home-7',
+    numericId: 7,
+    name: '自主空气清洁站 BORK V850',
+    description: '高效过滤，智能控制，静音设计',
+    price: '29,760元',
+    image: '/images/products/air-cleaner.png'
+  }
+]; 
