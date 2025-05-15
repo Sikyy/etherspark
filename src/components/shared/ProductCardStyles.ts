@@ -17,17 +17,18 @@ export const ProductImageContainer = styled.div`
   position: relative;
   width: 100%;
   height: 400px;
-  padding: 0;
+  padding: 60px 50px 60px 50px;
   overflow: hidden;
   background-color: #161516;
   border-radius: 12px;
   margin-bottom: 20px;
+  box-sizing: border-box;
 `;
 
 export const ProductImage = styled.div`
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #161516;
@@ -39,11 +40,11 @@ export const ProductImage = styled.div`
 `;
 
 export const ColorOptions = styled.div`
+  display: none;
   position: absolute;
   bottom: 15px;
   left: 0;
   right: 0;
-  display: flex;
   justify-content: center;
   gap: 10px;
   z-index: 2;

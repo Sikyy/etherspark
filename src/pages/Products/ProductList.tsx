@@ -17,33 +17,8 @@ import {
   ProductName,
   ProductPrice,
   ProductStatus,
-  ColorOptions,
-  ColorOption,
   AddToCartButton
 } from '../../components/shared/ProductCardStyles';
-
-// 模拟颜色选项数据
-const colorOptionsMap: { [key: string]: { color: string; name: string }[] } = {
-  'default': [
-    { color: '#E2DFDA', name: '米白色' },
-    { color: '#544F45', name: '深灰色' },
-    { color: '#9A8678', name: '棕色' }
-  ],
-  'news': [
-    { color: '#E2DFDA', name: '米白色' },
-    { color: '#544F45', name: '深灰色' },
-    { color: '#9A8678', name: '棕色' }
-  ],
-  'tools': [
-    { color: '#1A1A1A', name: '黑色' },
-    { color: '#544F45', name: '深灰色' }
-  ],
-  'kitchen': [
-    { color: '#E2DFDA', name: '米白色' },
-    { color: '#1A1A1A', name: '黑色' },
-    { color: '#FE5000', name: '橙色' }
-  ]
-};
 
 const ProductList: React.FC = () => {
   const { category } = useParams<{ category: string }>();
@@ -59,14 +34,6 @@ const ProductList: React.FC = () => {
       setCategoryTitle('未找到分类');
     }
   }, [category]);
-
-  // 获取产品类别的颜色选项，如果没有特定分类的颜色，则使用默认颜色
-  const getColorOptions = (category: string | undefined) => {
-    if (!category || !colorOptionsMap[category]) {
-      return colorOptionsMap.default;
-    }
-    return colorOptionsMap[category];
-  };
 
   if (!products.length) {
     return (
@@ -88,16 +55,6 @@ const ProductList: React.FC = () => {
             <AddToCartButton />
             <ProductImageContainer>
               <ProductImage style={{ backgroundImage: `url(${product.image})` }} />
-              <ColorOptions>
-                {getColorOptions(category).map((colorOption, index) => (
-                  <ColorOption 
-                    key={index} 
-                    color={colorOption.color} 
-                    active={index === 0}
-                    title={colorOption.name}
-                  />
-                ))}
-              </ColorOptions>
             </ProductImageContainer>
             <ProductInfo>
               <ProductName>{product.name}</ProductName>

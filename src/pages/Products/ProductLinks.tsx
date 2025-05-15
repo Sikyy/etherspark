@@ -8,8 +8,6 @@ import {
   ProductName, 
   ProductPrice, 
   ProductStatus,
-  ColorOptions,
-  ColorOption,
   AddToCartButton
 } from '../../components/shared/ProductCardStyles';
 
@@ -70,13 +68,6 @@ const products = [
   }
 ];
 
-// 颜色选项
-const colorOptions = [
-  { color: '#E2DFDA', name: '米白色' },
-  { color: '#544F45', name: '深灰色' },
-  { color: '#9A8678', name: '棕色' }
-];
-
 const ProductLinks: React.FC = () => {
   return (
     <LinksContainer>
@@ -87,16 +78,6 @@ const ProductLinks: React.FC = () => {
             <AddToCartButton />
             <ProductImageContainer>
               <ProductImage style={{ backgroundImage: `url(${product.image})` }} />
-              <ColorOptions>
-                {colorOptions.map((colorOption, index) => (
-                  <ColorOption 
-                    key={index} 
-                    color={colorOption.color} 
-                    active={index === 0}
-                    title={colorOption.name}
-                  />
-                ))}
-              </ColorOptions>
             </ProductImageContainer>
             <ProductInfo>
               <ProductName>{product.name}</ProductName>
