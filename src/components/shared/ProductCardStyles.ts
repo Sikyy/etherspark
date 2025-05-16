@@ -7,6 +7,7 @@ export const ProductCard = styled(Link)`
   text-decoration: none;
   height: 100%;
   transition: transform 0.3s ease;
+  will-change: transform;
   
   &:hover {
     transform: translateY(-5px);
@@ -32,10 +33,11 @@ export const ProductImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-color: #161516;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
+  will-change: transform;
   
   ${ProductCard}:hover & {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 `;
 

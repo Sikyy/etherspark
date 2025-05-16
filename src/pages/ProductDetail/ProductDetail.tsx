@@ -35,7 +35,7 @@ import {
 } from './ProductDetailStyles';
 
 // 导入产品数据
-import { productData, Product as ProductDataType, ProductImage } from '../Products/productData';
+import { productData, Product as ProductDataType, ProductImage } from '../Products/data';
 
 // 产品类型定义
 interface ProductFeature {
@@ -75,7 +75,7 @@ const convertProductData = (productId: number): Product | null => {
   let foundCategory = '';
   
   for (const category in productData) {
-    const product = productData[category].find(p => p.numericId === productId);
+    const product = productData[category].find((p: ProductDataType) => p.numericId === productId);
     if (product) {
       foundProduct = product;
       foundCategory = category;
@@ -90,7 +90,7 @@ const convertProductData = (productId: number): Product | null => {
   
   // 构造特性数据
   const features: ProductFeature[] = product.features 
-    ? product.features.map((feature, index) => ({
+    ? product.features.map((feature: string, index: number) => ({
         title: `特性 ${index + 1}`,
         description: feature,
         image: product.gallery && product.gallery.length > index 
@@ -103,7 +103,7 @@ const convertProductData = (productId: number): Product | null => {
   const specs: ProductSpec[] = product.specifications
     ? Object.entries(product.specifications).map(([name, value]) => ({
         name,
-        value
+        value: value as string
       }))
     : [];
   
@@ -111,7 +111,7 @@ const convertProductData = (productId: number): Product | null => {
   const relatedProducts: RelatedProduct[] = [];
   if (foundCategory) {
     const categoryProducts = productData[foundCategory]
-      .filter(p => p.numericId !== productId)
+      .filter((p: ProductDataType) => p.numericId !== productId)
       .slice(0, 3);
       
     for (const relatedProduct of categoryProducts) {

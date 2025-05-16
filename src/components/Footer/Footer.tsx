@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               <Link to="/scooter">{t('links.products.scooter')}</Link>
             </FooterItem>
             <FooterItem>
-              <Link to="/hair">{t('links.products.hair')}</Link>
+              <Link to="/life">{t('links.products.life')}</Link>
             </FooterItem>
             <FooterItem>
               <Link to="/pet">{t('links.products.pet')}</Link>

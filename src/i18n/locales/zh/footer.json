@@ -11,9 +11,11 @@
   },
   "links": {
     "products": {
+      "title": "产品",
+      "news": "新品",
       "tools": "工具",
       "scooter": "电动滑板车",
-      "hair": "美发产品",
+      "life": "生活产品",
       "pet": "宠物用品",
       "sound": "声学",
       "watch": "手表",

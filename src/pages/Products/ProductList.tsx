@@ -8,7 +8,7 @@ import {
   EmptyState
 } from './ProductListStyles';
 
-import { Product, productData, categoryTitles } from './productData';
+import { Product, productData, categoryTitles } from './data';
 import { 
   ProductCard, 
   ProductImageContainer,
@@ -24,16 +24,34 @@ const ProductList: React.FC = () => {
   const { category } = useParams<{ category: string }>();
   const [products, setProducts] = useState<Product[]>([]);
   const [categoryTitle, setCategoryTitle] = useState('');
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (category && productData[category]) {
       setProducts(productData[category]);
       setCategoryTitle(categoryTitles[category] || category);
+      
+      // 预加载图片
+      const imageUrls = productData[category].map(product => product.image);
+      preloadImages(imageUrls);
     } else {
       setProducts([]);
       setCategoryTitle('未找到分类');
     }
   }, [category]);
+
+  // 图片预加载函数
+  const preloadImages = (urls: string[]) => {
+    urls.forEach(url => {
+      if (!loadedImages.has(url)) {
+        const img = new Image();
+        img.src = url;
+        img.onload = () => {
+          setLoadedImages(prev => new Set(prev).add(url));
+        };
+      }
+    });
+  };
 
   if (!products.length) {
     return (
@@ -51,10 +69,19 @@ const ProductList: React.FC = () => {
       
       <ProductGrid>
         {products.map((product) => (
-          <ProductCard key={product.id} to={`/product/${product.numericId}`}>
+          <ProductCard 
+            key={product.id} 
+            to={`/product/${product.numericId}`}
+          >
             <AddToCartButton />
             <ProductImageContainer>
-              <ProductImage style={{ backgroundImage: `url(${product.image})` }} />
+              <ProductImage 
+                style={{ 
+                  backgroundImage: `url(${product.image})`,
+                  opacity: loadedImages.has(product.image) ? 1 : 0.8,
+                  transition: 'opacity 0.3s ease, transform 0.3s ease'
+                }} 
+              />
             </ProductImageContainer>
             <ProductInfo>
               <ProductName>{product.name}</ProductName>

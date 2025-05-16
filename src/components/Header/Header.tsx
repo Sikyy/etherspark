@@ -51,7 +51,7 @@ const Header: React.FC = () => {
             <Link to="/scooter">{t('nav.scooter')}</Link>
           </NavItem>
           <NavItem>
-            <Link to="/hair">{t('nav.hair')}</Link>
+            <Link to="/life">{t('nav.life')}</Link>
           </NavItem>
           <NavItem>
             <Link to="/pet">{t('nav.pet')}</Link>
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
               <Link to="/scooter">{t('nav.scooter')}</Link>
             </NavItem>
             <NavItem>
-              <Link to="/hair">{t('nav.hair')}</Link>
+              <Link to="/life">{t('nav.life')}</Link>
             </NavItem>
             <NavItem>
               <Link to="/pet">{t('nav.pet')}</Link>

@@ -2,13 +2,18 @@
   "menu": "菜单",
   "close": "关闭",
   "nav": {
+    "home": "首页",
+    "products": "产品",
     "news": "新品",
     "tools": "工具",
     "scooter": "电动滑板车",
-    "hair": "美发产品",
+    "life": "生活产品",
     "pet": "宠物用品",
     "sound": "声学",
     "watch": "手表",
-    "invehicle": "车载用品"
+    "invehicle": "车载用品",
+    "about": "关于我们",
+    "business": "商务合作",
+    "contact": "联系我们"
   }
 } 

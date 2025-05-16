@@ -11,13 +11,15 @@
   },
   "links": {
     "products": {
+      "title": "Products",
+      "news": "New",
       "tools": "Tools",
-      "scooter": "Electric Scooters",
-      "hair": "Hair Products",
-      "pet": "Pet Supplies",
-      "sound": "Audio",
+      "scooter": "Scooters",
+      "life": "Life Products",
+      "pet": "Pet Products",
+      "sound": "Sound",
       "watch": "Watches",
-      "invehicle": "In-Vehicle"
+      "invehicle": "In-vehicle"
     },
     "support": {
       "about": "About Us",

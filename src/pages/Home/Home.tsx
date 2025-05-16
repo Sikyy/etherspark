@@ -31,7 +31,7 @@ import {
 } from '../../components/shared/ProductCardStyles';
 
 // 引入产品数据
-import { productData, Product } from '../../pages/Products/productData';
+import { productData, Product } from '../../pages/Products/data';
 
 const Home: React.FC = () => {
   const [loaded, setLoaded] = useState(false);
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
       </HeroCarousel>
 
       <ProductsGrid>
-        {products.map((product, index) => (
+        {products.map((product: Product, index: number) => (
           <FadeInContainer 
             key={product.id} 
             style={{ 
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
                 <ProductImage style={{ backgroundImage: `url("${product.image}")` }} />
                 {product.colorOptions && product.colorOptions.length > 0 && (
                   <ColorOptions>
-                    {product.colorOptions.map((colorOption, index) => (
+                    {product.colorOptions.map((colorOption: { color: string, name: string }, index: number) => (
                       <ColorOption 
                         key={index} 
                         color={colorOption.color} 
