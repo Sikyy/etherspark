@@ -33,14 +33,14 @@ export const soundProducts: Product[] = [
     price: '18,999₽',
     image: '/images/sound/SM1.png'
   },
-  // {
-  //   id: 'sound-5',
-  //   numericId: 605,
-  //   name: 'SM2',
-  //   description: '强力粉碎，静音设计，抗菌材质',
-  //   price: '18,999₽',
-  //   image: '/images/sound/SM2.png'
-  // },
+  {
+    id: 'sound-5',
+    numericId: 605,
+    name: 'SM2',
+    description: '强力粉碎，静音设计，抗菌材质',
+    price: '18,999₽',
+    image: '/images/sound/SM2.png'
+  },
   {
     id: 'sound-6',
     numericId: 606,

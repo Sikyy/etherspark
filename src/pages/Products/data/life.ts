@@ -113,10 +113,10 @@ export const lifeProducts: Product[] = [
   {
     id: 'life-9',
     numericId: 409,
-    name: 'Rl1',
+    name: 'RI1',
     description: '激光导航，深度清洁，自动回充',
     price: '3,499₽',
-    image: 'images/life/Rl1.png'
+    image: 'images/life/RI1.png'
   },
   {
     id: 'life-10',
