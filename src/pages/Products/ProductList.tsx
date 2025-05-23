@@ -32,7 +32,7 @@ const ProductList: React.FC = () => {
       setCategoryTitle(categoryTitles[category] || category);
       
       // 预加载图片
-      const imageUrls = productData[category].map(product => product.image);
+      const imageUrls = productData[category].map(product => product.cardImage);
       preloadImages(imageUrls);
     } else {
       setProducts([]);
@@ -77,8 +77,8 @@ const ProductList: React.FC = () => {
             <ProductImageContainer>
               <ProductImage 
                 style={{ 
-                  backgroundImage: `url(${product.image})`,
-                  opacity: loadedImages.has(product.image) ? 1 : 0.8,
+                  backgroundImage: `url(${product.cardImage})`,
+                  opacity: loadedImages.has(product.cardImage) ? 1 : 0.8,
                   transition: 'opacity 0.3s ease, transform 0.3s ease'
                 }} 
               />

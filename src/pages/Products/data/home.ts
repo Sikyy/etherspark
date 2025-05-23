@@ -7,7 +7,8 @@ export const homeProducts: Product[] = [
     name: '粉丝合集 BORK T782',
     description: '高效双面烤制，智能温控系统',
     price: '¥9,999',
-    image: '/images/products/1.png',
+    image: '/images/home/scene/T782/T782_main.jpg',
+    cardImage: '/images/home/T782.png',
     featured: true,
     tag: '新品',
     colorOptions: [
@@ -22,7 +23,8 @@ export const homeProducts: Product[] = [
     name: '台扇 BORK P513 gg',
     description: '智能控温静音设计，远程控制',
     price: '14,000元',
-    image: '/images/products/2.png',
+    image: '/images/home/scene/P513/P513_main.jpg',
+    cardImage: '/images/home/P513.png',
     colorOptions: [
       { color: '#1A1A1A', name: '黑色' },
       { color: '#FFFFFF', name: '白色' }
@@ -34,7 +36,8 @@ export const homeProducts: Product[] = [
     name: '空气净化加湿器 BORK A705',
     description: '高效净化，智能加湿，静音设计',
     price: '14,000元',
-    image: '/images/products/5.png',
+    image: '/images/home/scene/A705/A705_main.jpg',
+    cardImage: '/images/home/A705.png',
     tag: '即将上市'
   },
   {
@@ -43,7 +46,8 @@ export const homeProducts: Product[] = [
     name: '空气净化加湿器 BORK A802 RAIN',
     description: '高效净化，智能加湿，静音设计',
     price: '36,720元',
-    image: '/images/products/7.png'
+    image: '/images/home/scene/A802/A802_main.jpg',
+    cardImage: '/images/home/A802.png'
   },
   {
     id: 'home-5',
@@ -51,7 +55,8 @@ export const homeProducts: Product[] = [
     name: '加湿器 BORK H503',
     description: '大容量水箱，智能湿度控制',
     price: '24,000元',
-    image: '/images/products/humidifier.png',
+    image: '/images/home/scene/H503/H503_main.jpg',
+    cardImage: '/images/home/H503.png',
     tag: '折扣',
     colorOptions: [
       { color: '#FE5000', name: '橙色' },
@@ -64,7 +69,8 @@ export const homeProducts: Product[] = [
     name: '音箱机 BORK HF700',
     description: '高保真音质，智能语音控制',
     price: '36,720元',
-    image: '/images/products/speaker.png'
+    image: '/images/home/scene/HF700/HF700_main.jpg',
+    cardImage: '/images/home/HF700.png'
   },
   {
     id: 'home-7',
@@ -72,6 +78,7 @@ export const homeProducts: Product[] = [
     name: '自主空气清洁站 BORK V850',
     description: '高效过滤，智能控制，静音设计',
     price: '29,760元',
-    image: '/images/products/air-cleaner.png'
+    image: '/images/home/scene/V850/V850_main.jpg',
+    cardImage: '/images/home/V850.png'
   }
 ]; 

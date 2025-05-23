@@ -7,7 +7,8 @@ export const invehicleProducts: Product[] = [
     name: '车载空气净化器',
     description: '高效过滤车内空气污染物，降低甲醛浓度',
     price: '¥999',
-    image: 'https://via.placeholder.com/400x300/333/fff?text=车载空气净化器'
+    image: 'https://via.placeholder.com/400x300/333/fff?text=车载空气净化器',
+    cardImage: '/images/invehicle/air-purifier.png',
   },
   {
     id: 'invehicle-2',
@@ -15,7 +16,8 @@ export const invehicleProducts: Product[] = [
     name: '车载冰箱',
     description: '快速制冷，静音设计，大容量收纳',
     price: '¥1,999',
-    image: 'https://via.placeholder.com/400x300/333/fff?text=车载冰箱'
+    image: 'https://via.placeholder.com/400x300/333/fff?text=车载冰箱',
+    cardImage: '/images/invehicle/refrigerator.png',
   },
   {
     id: 'invehicle-3',
@@ -23,7 +25,8 @@ export const invehicleProducts: Product[] = [
     name: '车载咖啡机',
     description: '便携设计，快速制作咖啡，多种口味选择',
     price: '¥899',
-    image: 'https://via.placeholder.com/400x300/333/fff?text=车载咖啡机'
+    image: 'https://via.placeholder.com/400x300/333/fff?text=车载咖啡机',
+    cardImage: '/images/invehicle/coffee-machine.png',
   },
   {
     id: 'invehicle-4',
@@ -31,6 +34,7 @@ export const invehicleProducts: Product[] = [
     name: '车载吸尘器',
     description: '强大吸力，无线设计，方便清洁车内卫生',
     price: '¥599',
-    image: 'https://via.placeholder.com/400x300/333/fff?text=车载吸尘器'
+    image: 'https://via.placeholder.com/400x300/333/fff?text=车载吸尘器',
+    cardImage: '/images/invehicle/vacuum-cleaner.png',
   }
 ]; 

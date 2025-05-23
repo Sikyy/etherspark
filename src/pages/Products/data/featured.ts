@@ -7,7 +7,8 @@ export const featuredProducts: Product[] = [
     name: '粉丝合集 BORK T782',
     description: '高效双面烤制，智能温控系统',
     price: '¥9,999',
-    image: '/images/products/1.png',
+    image: '/images/home/scene/T782/T782_main.jpg',
+    cardImage: '/images/home/T782.png',
     gallery: [
       {
         src: '/images/products/1.png',
@@ -56,15 +57,16 @@ export const featuredProducts: Product[] = [
     name: '台扇 BORK P513 gg',
     description: '智能控温静音设计，远程控制',
     price: '¥14,000',
-    image: '/images/products/2.png',
+    image: '/images/home/scene/P513/P513_main.jpg',
+    cardImage: '/images/home/P513.png',
     gallery: [
       {
-        src: '/images/products/2.png',
+        src: '/images/home/scene/P513/P513_main.jpg',
         alt: '台扇 BORK P513 gg - 正面视图',
         caption: '现代简约设计，完美融入各种家居风格'
       },
       {
-        src: '/images/products/5.png',
+        src: '/images/home/scene/P513/P513_control.jpg',
         alt: '台扇 BORK P513 gg - 控制面板',
         caption: '智能触控面板，操作便捷'
       }

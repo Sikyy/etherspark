@@ -7,7 +7,8 @@ export const lifeProducts: Product[] = [
     name: 'MA1',
     description: '变频节能，远程控制，空气净化功能',
     price: '12,999₽',
-    image: 'images/life/MA1.png',
+    image: '/images/life/scene/MA1/MA1_main.jpg',
+    cardImage: '/images/life/MA1.png',
     gallery: [
       {
         src: 'https://via.placeholder.com/800x600/333/fff?text=智能空调-正面',
@@ -60,7 +61,8 @@ export const lifeProducts: Product[] = [
     name: 'MD1',
     description: '自动感应，定时控制，静音电机',
     price: '6,999₽',
-    image: 'images/life/MD1.png'
+    image: '/images/life/scene/MD1/MD1_main.jpg',
+    cardImage: '/images/life/MD1.png'
   },
   {
     id: 'life-3',
@@ -68,7 +70,8 @@ export const lifeProducts: Product[] = [
     name: 'MS1',
     description: '多种解锁方式，防盗报警，远程控制',
     price: '4,999₽',
-    image: 'images/life/MS1.png'
+    image: '/images/life/scene/MS1/MS1_main.jpg',
+    cardImage: '/images/life/MS1.png'
   },
   {
     id: 'life-4',
@@ -76,7 +79,8 @@ export const lifeProducts: Product[] = [
     name: 'BD1',
     description: '激光导航，深度清洁，自动回充',
     price: '5,999₽',
-    image: 'images/life/BD1.png'
+    image: '/images/life/scene/BD1/BD1_main.jpg',
+    cardImage: '/images/life/BD1.png'
   },
   {
     id: 'life-5',
@@ -84,7 +88,8 @@ export const lifeProducts: Product[] = [
     name: 'BS1',
     description: '激光导航，深度清洁，自动回充',
     price: '2,499₽',
-    image: 'images/life/BD1.png'
+    image: '/images/life/scene/BS1/BS1_main.jpg',
+    cardImage: '/images/life/BS1.png'
   },
   {
     id: 'life-6',
@@ -92,7 +97,8 @@ export const lifeProducts: Product[] = [
     name: 'BS2',
     description: '激光导航，深度清洁，自动回充',
     price: '3,399₽',
-    image: 'images/life/BS2.png'
+    image: '/images/life/scene/BS2/BS2_main.jpg',
+    cardImage: '/images/life/BS2.png'
   },
   {
     id: 'life-7',
@@ -100,7 +106,8 @@ export const lifeProducts: Product[] = [
     name: 'BC1',
     description: '激光导航，深度清洁，自动回充',
     price: '2,499₽',
-    image: 'images/life/BC1.png'
+    image: '/images/life/scene/BC1/BC1_main.jpg',
+    cardImage: '/images/life/BC1.png'
   },
   {
     id: 'life-8',
@@ -108,7 +115,8 @@ export const lifeProducts: Product[] = [
     name: 'BT1',
     description: '激光导航，深度清洁，自动回充',
     price: '699₽',
-    image: 'images/life/BT1.png'
+    image: '/images/life/scene/BT1/BT1_main.jpg',
+    cardImage: '/images/life/BT1.png'
   },
   {
     id: 'life-9',
@@ -116,7 +124,8 @@ export const lifeProducts: Product[] = [
     name: 'RI1',
     description: '激光导航，深度清洁，自动回充',
     price: '3,499₽',
-    image: 'images/life/RI1.png'
+    image: '/images/life/scene/RI1/RI1_main.jpg',
+    cardImage: '/images/life/RI1.png'
   },
   {
     id: 'life-10',
@@ -124,7 +133,8 @@ export const lifeProducts: Product[] = [
     name: 'RC1',
     description: '激光导航，深度清洁，自动回充',
     price: '3,499₽',
-    image: 'images/life/RC1.png'
+    image: '/images/life/scene/RC1/RC1_main.jpg',
+    cardImage: '/images/life/RC1.png'
   },
   {
     id: 'life-11',
@@ -132,7 +142,8 @@ export const lifeProducts: Product[] = [
     name: 'RS1',
     description: '激光导航，深度清洁，自动回充',
     price: '3,499₽',
-    image: 'images/life/RS1.png'
+    image: '/images/life/scene/RS1/RS1_main.jpg',
+    cardImage: '/images/life/RS1.png'
   },
   {
     id: 'life-12',
@@ -140,7 +151,8 @@ export const lifeProducts: Product[] = [
     name: 'S1',
     description: '激光导航，深度清洁，自动回充',
     price: '2,999₽',
-    image: 'images/life/S1.png'
+    image: '/images/life/scene/S1/S1_main.jpg',
+    cardImage: '/images/life/S1.png'
   },
   {
     id: 'life-13',
@@ -148,7 +160,8 @@ export const lifeProducts: Product[] = [
     name: 'E1',
     description: '激光导航，深度清洁，自动回充',
     price: '3,699₽',
-    image: 'images/life/E1.png'
+    image: '/images/life/scene/E1/E1_main.jpg',
+    cardImage: '/images/life/E1.png'
   },
   {
     id: 'life-14',
@@ -156,7 +169,8 @@ export const lifeProducts: Product[] = [
     name: 'P1',
     description: '激光导航，深度清洁，自动回充',
     price: '2,999₽',
-    image: 'images/life/P1.png'
+    image: '/images/life/scene/P1/P1_main.jpg',
+    cardImage: '/images/life/P1.png'
   },
   {
     id: 'life-15',
@@ -164,7 +178,8 @@ export const lifeProducts: Product[] = [
     name: 'R1',
     description: '激光导航，深度清洁，自动回充',
     price: '2,499₽',
-    image: 'images/life/R1.png'
+    image: '/images/life/scene/R1/R1_main.jpg',
+    cardImage: '/images/life/R1.png'
   },
   {
     id: 'life-16',
@@ -172,7 +187,7 @@ export const lifeProducts: Product[] = [
     name: 'OI1',
     description: '激光导航，深度清洁，自动回充',
     price: '3,499₽',
-    image: 'images/life/OI1.png'
+    image: '/images/life/scene/OI1/OI1_main.jpg',
+    cardImage: '/images/life/OI1.png'
   }
-  
 ]; 

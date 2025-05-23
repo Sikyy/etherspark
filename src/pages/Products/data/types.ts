@@ -17,6 +17,7 @@ export interface Product {
   description: string;
   price: string;
   image: string;
+  cardImage: string;
   gallery?: ProductImage[];
   features?: string[];
   specifications?: { [key: string]: string };

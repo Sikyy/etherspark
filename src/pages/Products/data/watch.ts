@@ -7,7 +7,8 @@ export const watchProducts: Product[] = [
     name: 'WB1',
     description: '全套智能家居解决方案，一键控制全屋设备',
     price: '4,999₽',
-    image: 'images/watch/WB1.png'
+    image: '/images/watch/scene/WB1/WB1_main.jpg',
+    cardImage: '/images/watch/WB1.png'
   },
   // {
   //   id: 'watch-2',
@@ -23,7 +24,8 @@ export const watchProducts: Product[] = [
     name: 'WF1',
     description: '营造舒适睡眠环境，智能调节光线和温度',
     price: '6,999₽',
-    image: 'images/watch/WF1.png'
+    image: '/images/watch/scene/WF1/WF1_main.jpg',
+    cardImage: '/images/watch/WF1.png'
   },
   {
     id: 'watch-4',
@@ -31,7 +33,8 @@ export const watchProducts: Product[] = [
     name: 'WF2',
     description: '提升办公效率，创造舒适办公环境',
     price: '7,999₽',
-    image: 'images/watch/WF2.png'
+    image: '/images/watch/scene/WF2/WF2_main.jpg',
+    cardImage: '/images/watch/WF2.png'
   },
   {
     id: 'watch-5',
@@ -39,7 +42,8 @@ export const watchProducts: Product[] = [
     name: 'WS1',
     description: '提升办公效率，创造舒适办公环境',
     price: '5,199₽',
-    image: 'images/watch/WS1.png'
+    image: '/images/watch/scene/WS1/WS1_main.jpg',
+    cardImage: '/images/watch/WS1.png'
   },
   {
     id: 'watch-6',
@@ -47,6 +51,7 @@ export const watchProducts: Product[] = [
     name: 'BB1',
     description: '提升办公效率，创造舒适办公环境',
     price: '1,999₽',
-    image: 'images/watch/BB1.png'
+    image: '/images/watch/scene/BB1/BB1_main.jpg',
+    cardImage: '/images/watch/BB1.png'
   }
 ]; 

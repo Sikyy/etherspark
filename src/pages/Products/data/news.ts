@@ -8,6 +8,7 @@ export const newsProducts: Product[] = [
     description: '全方位智能家居管理系统，支持多种设备连接',
     price: '¥2,999',
     image: '/images/products/1.png',
+    cardImage: '/images/products/1.png',
     tag: '新品',
     gallery: [
       {
@@ -55,6 +56,7 @@ export const newsProducts: Product[] = [
     description: '高效过滤PM2.5，杀菌除味，智能监测空气质量',
     price: '¥3,499',
     image: '/images/products/5.png',
+    cardImage: '/images/products/5.png',
     gallery: [
       {
         src: 'https://via.placeholder.com/800x600/333/fff?text=空气净化系统-正面',
@@ -100,6 +102,7 @@ export const newsProducts: Product[] = [
     description: '360°环绕音效，智能语音控制，多房间同步播放',
     price: '¥4,299',
     image: 'https://via.placeholder.com/400x300/333/fff?text=智能音响系统',
+    cardImage: '/images/products/6.png',
     gallery: [
       {
         src: 'https://via.placeholder.com/800x600/333/fff?text=智能音响系统-正面',
@@ -139,7 +142,8 @@ export const newsProducts: Product[] = [
     name: '全自动咖啡机',
     description: '智能研磨，精准控温，多种咖啡模式一键制作',
     price: '¥5,999',
-    image: 'https://via.placeholder.com/400x300/333/fff?text=全自动咖啡机'
+    image: 'https://via.placeholder.com/400x300/333/fff?text=全自动咖啡机',
+    cardImage: '/images/products/7.png'
   },
   {
     id: 'news-5',
@@ -147,6 +151,7 @@ export const newsProducts: Product[] = [
     name: '全自动咖啡机-2',
     description: '智能研磨，精准控温，多种咖啡模式一键制作',
     price: '¥5,999',
-    image: 'https://via.placeholder.com/400x300/333/fff?text=全自动咖啡机'
+    image: 'https://via.placeholder.com/400x300/333/fff?text=全自动咖啡机',
+    cardImage: '/images/products/8.png'
   }
 ]; 
