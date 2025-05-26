@@ -176,7 +176,7 @@ const Home: React.FC = () => {
           <NewsletterDescription>
             获取最新产品信息、技术资讯和独家优惠
           </NewsletterDescription>
-          <Link to="/products" style={{ 
+          {/* <Link to="/products" style={{ 
             display: 'inline-block',
             marginTop: '20px',
             padding: '12px 30px',
@@ -189,7 +189,7 @@ const Home: React.FC = () => {
             transition: 'background-color 0.3s ease'
           }}>
             查看所有产品详情页
-          </Link>
+          </Link> */}
         </NewsletterContent>
       </NewsletterSection>
     </HomeContainer>

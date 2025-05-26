@@ -95,7 +95,7 @@ export const ProductPrice = styled.div`
   align-items: center;
   
   &:before {
-    content: '价格: ';
+    content: 'цена: ';
     color: #888;
     font-size: 16px;
     margin-right: 10px;

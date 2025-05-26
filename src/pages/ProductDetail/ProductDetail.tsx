@@ -31,11 +31,10 @@ import {
   RelatedProductInfo,
   RelatedProductName,
   RelatedProductPrice,
-  AboutLink
 } from './ProductDetailStyles';
 
 // 导入产品数据
-import { productData, Product as ProductDataType, ProductImage } from '../Products/data';
+import { productData, Product as ProductDataType} from '../Products/data';
 
 // 产品类型定义
 interface ProductFeature {
@@ -91,7 +90,8 @@ const convertProductData = (productId: number): Product | null => {
   // 构造特性数据
   const features: ProductFeature[] = product.features 
     ? product.features.map((feature: string, index: number) => ({
-        title: `特性 ${index + 1}`,
+      // ${index + 1}  
+      title: `Особенности товара`,
         description: feature,
         image: product.gallery && product.gallery.length > index 
           ? product.gallery[index].src 
@@ -128,7 +128,7 @@ const convertProductData = (productId: number): Product | null => {
     id: product.numericId,
     name: product.name,
     subTitle: product.description,
-    model: `BORK ${product.id}`,
+    model: `EtherSpark ${product.id}`,
     price: product.price,
     heroImage: product.image,
     features,
@@ -179,8 +179,7 @@ const ProductDetail: React.FC = () => {
             {product.subTitle && <ProductSubTitle>{product.subTitle}</ProductSubTitle>}
             <ProductModel>{product.model}</ProductModel>
             <ProductPrice>{product.price}</ProductPrice>
-            <BuyButton>购买</BuyButton>
-            <AboutLink>了解更多关于我们的产品</AboutLink>
+            <BuyButton>Купить</BuyButton>
           </ProductInfo>
         </ProductSection>
 
@@ -195,7 +194,8 @@ const ProductDetail: React.FC = () => {
         ))}
 
         <SpecsSection>
-          <SpecsTitle>特征</SpecsTitle>
+        {/* 产品参数 */}
+          <SpecsTitle>Параметры товара</SpecsTitle>
           <SpecsGrid>
             {product.specs.map((spec, index) => (
               <SpecItem key={index}>

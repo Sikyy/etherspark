@@ -52,7 +52,7 @@ const products = [
     id: 1,
     numericId: 1,
     name: '搅拌机 B 781',
-    model: 'BORK B781',
+    model: 'EtherSpark B781',
     image: '/images/products/1.png',
     price: '33万卢布',
     featured: true,
