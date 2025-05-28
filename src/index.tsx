@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './i18n'; // 导入 i18n 配置
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

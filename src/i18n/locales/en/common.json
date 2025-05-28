@@ -1,6 +1,164 @@
 {
   "language": "English",
   "brand": "EtherSpark",
+  "brandName": "EtherSpark",
   "tagline": "Igniting the Future",
-  "loading": "Loading..."
+  "loading": "Loading...",
+
+  "home": {
+    "hero1": {
+      "title": "The Future of Innovative Technology",
+      "subtitle": "EtherSpark - Redefining Smart Living"
+    },
+    "hero2": {
+      "title": "Connected Smart Home",
+      "subtitle": "Creating a Seamless Smart Living Experience"
+    },
+    "hero3": {
+      "title": "Technology Changes Life",
+      "subtitle": "Making Technology Your Life Assistant"
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "description": "Get the latest product information, tech news, and exclusive offers"
+    }
+  },
+  
+  "products": {
+    "tags": {
+      "new": "New",
+      "hot": "Hot",
+      "sale": "Sale",
+      "limited": "Limited Edition"
+    },
+    "buy": "Buy",
+    "relatedProducts": "Related Products",
+    "productParams": "Product Parameters",
+    "productFeatures": "Product Features",
+    "notFound": "Product Not Found",
+    "category": {
+      "notFound": "No products found in this category"
+    }
+  },
+
+  "about": {
+    "title": "About Us",
+    "story": {
+      "title": "Our Story",
+      "p1": "EtherSpark, founded in 2018, is a company dedicated to the design and sale of high-quality tech products. Our mission is to provide innovative technology products that improve the quality of life through exquisite design and outstanding performance.",
+      "p2": "The company name 'EtherSpark' represents our vision: just as the Ethernet connects the world, we hope to ignite the spark of technology in users' lives through our products. We believe that technology should be beautiful, practical, and seamlessly integrated into users' daily lives.",
+      "p3": "From electric scooters to hair products, from pet supplies to audio equipment, our product line covers multiple areas, but all products have one thing in common: exquisite design and outstanding performance."
+    },
+    "stats": {
+      "years": "Years of Experience",
+      "products": "Product Series",
+      "customers": "Satisfied Customers",
+      "branches": "Global Branches"
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "intro": "At EtherSpark, we firmly believe in the following principles:",
+      "design": "Design First",
+      "designText": "Our products are not just tools, but works of art that can beautify your living space.",
+      "userCentric": "User-Centered",
+      "userCentricText": "Every product development starts from user needs and solves practical problems.",
+      "quality": "Quality Assurance",
+      "qualityText": "We use the highest quality materials and the strictest production standards to ensure product durability.",
+      "sustainable": "Sustainable Development",
+      "sustainableText": "We are committed to reducing environmental impact, considering sustainability from product design to packaging."
+    },
+    "team": {
+      "title": "Our Team",
+      "ceo": "Chief Executive Officer",
+      "designDirector": "Design Director",
+      "techDirector": "Technical Director",
+      "marketingDirector": "Marketing Director"
+    }
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "workingHours": "Working Hours",
+      "workingHoursValue": "Monday to Friday: 9:00 - 18:00"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Your message has been sent successfully! We will reply to you as soon as possible."
+    }
+  },
+
+  "business": {
+    "title": "For Business Clients",
+    "intro": {
+      "title": "Why Choose EtherSpark Business Solutions",
+      "description": "EtherSpark provides comprehensive technology product solutions for business clients, from high-end office equipment to smart conference systems. We are committed to improving work efficiency and creating a modern work environment for enterprises. Whether you are a startup or a large multinational company, we can provide customized technology product solutions."
+    },
+    "features": {
+      "quality": {
+        "title": "High Quality Guarantee",
+        "description": "All products use the highest quality materials and the strictest production standards to ensure long-term stable operation."
+      },
+      "customization": {
+        "title": "Customized Solutions",
+        "description": "Provide personalized product configurations according to specific enterprise needs to meet the special requirements of different industries."
+      },
+      "support": {
+        "title": "Professional Technical Support",
+        "description": "Enterprise exclusive customer service team, providing 24/7 technical support to ensure normal equipment operation."
+      },
+      "delivery": {
+        "title": "Fast Delivery and Installation",
+        "description": "Provide fast delivery and professional installation services, completing the entire process from order to installation within 24 hours at the fastest."
+      }
+    },
+    "services": {
+      "title": "Our Enterprise Services",
+      "office": {
+        "title": "Office Equipment Solutions",
+        "description": "Provide high-end office equipment, including smart workstations, conference systems, multimedia equipment, etc., to improve office efficiency and experience."
+      },
+      "space": {
+        "title": "Smart Office Space Design",
+        "description": "Combine space planning and technology products to create an intelligent and humane modern office environment, improving employee satisfaction."
+      },
+      "gifts": {
+        "title": "Corporate Gift Customization",
+        "description": "Provide high-quality corporate gift customization services, including brand customization, gift box design, etc., to show a professional corporate image."
+      },
+      "rental": {
+        "title": "Equipment Rental Service",
+        "description": "Provide equipment rental services for enterprises, including short-term project equipment needs, large-scale event equipment support, etc., reducing enterprise fixed asset investment."
+      }
+    },
+    "testimonials": {
+      "title": "Customer Testimonials",
+      "1": {
+        "quote": "EtherSpark's products are not only beautifully designed but also reliable in quality. Their enterprise customer service team is very professional and helped us complete a comprehensive technical upgrade of our office.",
+        "author": "Director Zhang",
+        "company": "Technology Innovation Co., Ltd."
+      },
+      "2": {
+        "quote": "As a design company, we have very high requirements for equipment. The solutions provided by EtherSpark perfectly meet our needs and improve work efficiency.",
+        "author": "Design Director Li",
+        "company": "Creative Design Studio"
+      },
+      "3": {
+        "quote": "From procurement to installation, EtherSpark's enterprise service team is professional and efficient throughout. The product quality is excellent, after-sales service is timely, and it is a trustworthy partner.",
+        "author": "Manager Wang",
+        "company": "International Trade Co., Ltd."
+      }
+    },
+    "cta": {
+      "title": "Ready to Enhance Your Enterprise Technology Experience?",
+      "description": "Contact our enterprise customer team for exclusive solutions and preferential quotations.",
+      "button": "Contact Us"
+    }
+  }
 } 

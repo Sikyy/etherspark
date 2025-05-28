@@ -44,12 +44,13 @@ const LanguageDropdown = styled.div<{ isOpen: boolean }>`
   z-index: 100;
 `;
 
-const LanguageOption = styled.div`
+const LanguageOption = styled.div<{ active: boolean }>`
   color: white;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  background-color: ${props => props.active ? 'rgba(255, 255, 255, 0.2)' : 'transparent'};
   
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -61,27 +62,27 @@ interface LanguageSwitcherProps {
 }
 
 const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className }) => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  
-  // 在组件加载时和语言变化时记录当前语言
-  useEffect(() => {
-    console.log('Current language:', i18n.language);
-  }, [i18n.language]);
   
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
   const changeLanguage = (lang: string) => {
-    console.log('Changing language to:', lang);
-    i18n.changeLanguage(lang).then(() => {
-      console.log('Language changed to:', i18n.language);
+    if (i18n.language !== lang) {
+      console.log('Changing language to:', lang);
+      localStorage.setItem('i18nextLng', lang);
+      i18n.changeLanguage(lang).then(() => {
+        console.log('Language changed to:', i18n.language);
+        setIsOpen(false);
+      }).catch(err => {
+        console.error('Failed to change language:', err);
+      });
+    } else {
       setIsOpen(false);
-    }).catch(err => {
-      console.error('Failed to change language:', err);
-    });
+    }
   };
   
   // 点击外部关闭下拉菜单
@@ -99,21 +100,23 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className }) => {
   }, []);
   
   const getCurrentLanguageLabel = () => {
-    const currentLang = i18n.language;
-    console.log('Getting label for language:', currentLang);
+    const currentLang = i18n.language.split('-')[0]; // 处理可能的语言代码如 'zh-CN'
     
     switch (currentLang) {
       case 'zh':
-      case 'cn':
         return '中文';
       case 'ru':
         return 'Рус';
       case 'en':
         return 'Eng';
       default:
-        console.log('Unknown language, defaulting to:', currentLang);
         return currentLang === 'zh' ? '中文' : (currentLang === 'ru' ? 'Рус' : 'Eng');
     }
+  };
+  
+  // 检查当前语言是否匹配
+  const isActiveLanguage = (lang: string) => {
+    return i18n.language.startsWith(lang);
   };
   
   return (
@@ -122,9 +125,24 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className }) => {
         {getCurrentLanguageLabel()}
       </SwitcherButton>
       <LanguageDropdown isOpen={isOpen}>
-        <LanguageOption onClick={() => changeLanguage('zh')}>中文</LanguageOption>
-        <LanguageOption onClick={() => changeLanguage('ru')}>Рус</LanguageOption>
-        <LanguageOption onClick={() => changeLanguage('en')}>Eng</LanguageOption>
+        <LanguageOption 
+          active={isActiveLanguage('zh')} 
+          onClick={() => changeLanguage('zh')}
+        >
+          中文
+        </LanguageOption>
+        <LanguageOption 
+          active={isActiveLanguage('ru')} 
+          onClick={() => changeLanguage('ru')}
+        >
+          Рус
+        </LanguageOption>
+        <LanguageOption 
+          active={isActiveLanguage('en')} 
+          onClick={() => changeLanguage('en')}
+        >
+          Eng
+        </LanguageOption>
       </LanguageDropdown>
     </SwitcherContainer>
   );

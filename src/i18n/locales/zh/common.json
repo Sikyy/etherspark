@@ -1,6 +1,164 @@
 {
   "language": "中文",
   "brand": "以太花火",
+  "brandName": "以太花火",
   "tagline": "点燃未来",
-  "loading": "加载中..."
+  "loading": "加载中...",
+
+  "home": {
+    "hero1": {
+      "title": "创新科技的未来",
+      "subtitle": "以太花火 - 智能生活的全新定义"
+    },
+    "hero2": {
+      "title": "连接智能家居",
+      "subtitle": "打造无缝连接的智慧生活体验"
+    },
+    "hero3": {
+      "title": "科技改变生活",
+      "subtitle": "让科技成为生活的得力助手"
+    },
+    "newsletter": {
+      "title": "订阅我们的新闻通讯",
+      "description": "获取最新产品信息、技术资讯和独家优惠"
+    }
+  },
+  
+  "products": {
+    "tags": {
+      "new": "新品",
+      "hot": "热销",
+      "sale": "促销",
+      "limited": "限量版"
+    },
+    "buy": "购买",
+    "relatedProducts": "相关产品",
+    "productParams": "产品参数",
+    "productFeatures": "产品特点",
+    "notFound": "产品未找到",
+    "category": {
+      "notFound": "该分类下暂无产品"
+    }
+  },
+
+  "about": {
+    "title": "关于我们",
+    "story": {
+      "title": "我们的故事",
+      "p1": "EtherSpark（以太花火）成立于2018年，是一家专注于高品质科技产品的设计和销售公司。我们的使命是通过精致的设计和卓越的性能，为用户提供能够改善生活质量的创新科技产品。",
+      "p2": "公司名称'EtherSpark'代表我们的愿景：就像以太网连接了全世界，我们希望通过我们的产品在用户生活中点燃科技的火花。我们相信科技应该是美观的、实用的，并且能够无缝融入用户的日常生活。",
+      "p3": "从电动滑板车到美发产品，从宠物用品到音频设备，我们的产品线涵盖了多个领域，但所有产品都有一个共同点：精致的设计和卓越的性能。"
+    },
+    "stats": {
+      "years": "年行业经验",
+      "products": "产品系列",
+      "customers": "满意客户",
+      "branches": "全球分支"
+    },
+    "philosophy": {
+      "title": "我们的理念",
+      "intro": "在EtherSpark，我们坚信以下原则：",
+      "design": "设计至上",
+      "designText": "我们的产品不仅仅是工具，还是艺术品，能够美化您的生活空间。",
+      "userCentric": "用户为中心",
+      "userCentricText": "每个产品的开发都从用户需求出发，解决实际问题。",
+      "quality": "品质保证",
+      "qualityText": "我们使用最优质的材料和最严格的生产标准，确保产品的耐用性。",
+      "sustainable": "可持续发展",
+      "sustainableText": "我们致力于减少环境影响，从产品设计到包装都考虑可持续性。"
+    },
+    "team": {
+      "title": "我们的团队",
+      "ceo": "首席执行官",
+      "designDirector": "设计总监",
+      "techDirector": "技术总监",
+      "marketingDirector": "市场总监"
+    }
+  },
+
+  "contact": {
+    "title": "联系我们",
+    "info": {
+      "address": "地址",
+      "phone": "电话",
+      "email": "电子邮箱",
+      "workingHours": "工作时间",
+      "workingHoursValue": "周一至周五: 9:00 - 18:00"
+    },
+    "form": {
+      "name": "您的姓名",
+      "email": "您的邮箱",
+      "message": "您的留言",
+      "submit": "发送消息",
+      "success": "您的消息已成功发送！我们会尽快回复您。"
+    }
+  },
+
+  "business": {
+    "title": "对于企业客户",
+    "intro": {
+      "title": "为什么选择EtherSpark企业方案",
+      "description": "EtherSpark为企业客户提供全方位的科技产品解决方案，从高端办公设备到智能会议系统，我们致力于为企业提升工作效率和创造现代化的工作环境。无论是初创企业还是大型跨国公司，我们都能提供定制化的科技产品方案。"
+    },
+    "features": {
+      "quality": {
+        "title": "高品质保证",
+        "description": "所有产品均采用最优质的材料和最严格的生产标准，确保长期稳定运行。"
+      },
+      "customization": {
+        "title": "定制化方案",
+        "description": "根据企业特定需求提供个性化产品配置，满足不同行业的特殊要求。"
+      },
+      "support": {
+        "title": "专业技术支持",
+        "description": "企业专属客服团队，提供7*24小时技术支持，确保设备正常运行。"
+      },
+      "delivery": {
+        "title": "快速配送安装",
+        "description": "提供快速配送和专业安装服务，最快24小时内完成从下单到安装的全过程。"
+      }
+    },
+    "services": {
+      "title": "我们的企业服务",
+      "office": {
+        "title": "办公设备解决方案",
+        "description": "提供高端办公设备，包括智能工作站、会议系统、多媒体设备等，提升办公效率和体验。"
+      },
+      "space": {
+        "title": "智能办公空间设计",
+        "description": "结合空间规划和科技产品，打造智能化、人性化的现代办公环境，提升员工满意度。"
+      },
+      "gifts": {
+        "title": "企业礼品定制",
+        "description": "提供高品质企业礼品定制服务，包括品牌定制、礼盒设计等，展现企业专业形象。"
+      },
+      "rental": {
+        "title": "设备租赁服务",
+        "description": "为企业提供设备租赁服务，包括短期项目设备需求、大型活动设备支持等，降低企业固定资产投入。"
+      }
+    },
+    "testimonials": {
+      "title": "客户评价",
+      "1": {
+        "quote": "EtherSpark的产品不仅设计美观，而且质量可靠。他们的企业客户服务团队非常专业，帮助我们完成了办公室的全面技术升级。",
+        "author": "张总监",
+        "company": "科技创新有限公司"
+      },
+      "2": {
+        "quote": "作为一家设计公司，我们对设备的要求非常高。EtherSpark提供的解决方案完美满足了我们的需求，提升了工作效率。",
+        "author": "李设计总监",
+        "company": "创意设计工作室"
+      },
+      "3": {
+        "quote": "从采购到安装，EtherSpark的企业服务团队全程专业高效。产品质量优异，售后服务及时，是值得信赖的合作伙伴。",
+        "author": "王经理",
+        "company": "国际贸易有限公司"
+      }
+    },
+    "cta": {
+      "title": "准备提升您的企业科技体验？",
+      "description": "联系我们的企业客户团队，获取专属解决方案和优惠报价。",
+      "button": "联系我们"
+    }
+  }
 } 

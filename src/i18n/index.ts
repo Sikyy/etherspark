@@ -12,24 +12,41 @@ import headerRU from './locales/ru/header.json';
 import footerEN from './locales/en/footer.json';
 import footerZH from './locales/zh/footer.json';
 import footerRU from './locales/ru/footer.json';
+import productsEN from './locales/en/products.json';
+import productsZH from './locales/zh/products.json';
+import productsRU from './locales/ru/products.json';
 
 // 静态资源
 const resources = {
   en: {
     common: translationEN,
     header: headerEN,
-    footer: footerEN
+    footer: footerEN,
+    products: productsEN
   },
   zh: {
     common: translationZH,
     header: headerZH,
-    footer: footerZH
+    footer: footerZH,
+    products: productsZH
   },
   ru: {
     common: translationRU,
     header: headerRU,
-    footer: footerRU
+    footer: footerRU,
+    products: productsRU
   }
+};
+
+// 获取本地存储的语言或浏览器默认语言
+const getInitialLanguage = () => {
+  const savedLanguage = localStorage.getItem('i18nextLng');
+  if (savedLanguage && ['zh', 'en', 'ru'].includes(savedLanguage)) {
+    return savedLanguage;
+  }
+  // 检测浏览器语言
+  const browserLang = navigator.language.split('-')[0];
+  return ['zh', 'en', 'ru'].includes(browserLang) ? browserLang : 'zh';
 };
 
 i18n
@@ -41,12 +58,13 @@ i18n
   .init({
     resources,
     // 默认语言
+    lng: getInitialLanguage(),
     fallbackLng: 'zh',
     // 支持的语言
-    supportedLngs: ['zh', 'ru', 'en'],
+    supportedLngs: ['zh', 'en', 'ru'],
     debug: process.env.NODE_ENV === 'development',
     // 本地化命名空间
-    ns: ['common', 'header', 'footer'],
+    ns: ['common', 'header', 'footer', 'products'],
     defaultNS: 'common',
     // 检测语言的选项
     detection: {
@@ -62,6 +80,13 @@ i18n
     },
   });
 
-console.log('i18n initialized with languages:', i18n.languages);
+// 监听语言变化，确保所有组件重新渲染
+i18n.on('languageChanged', (lng) => {
+  console.log('Language changed to:', lng);
+  document.documentElement.setAttribute('lang', lng);
+  localStorage.setItem('i18nextLng', lng);
+});
+
+console.log('i18n initialized with language:', i18n.language);
 
 export default i18n; 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   HomeContainer,
   HeroBanner,
@@ -24,37 +25,45 @@ import {
   ProductInfo, 
   ProductName,
   ProductPrice,
-  ProductStatus,
   ColorOptions,
   ColorOption,
   AddToCartButton
 } from '../../components/shared/ProductCardStyles';
 
+// 引入TranslatedTag组件
+import TranslatedTag from '../../components/shared/TranslatedTag';
+
 // 引入产品数据
 import { productData, Product } from '../../pages/Products/data';
 
 const Home: React.FC = () => {
+  const { t, i18n } = useTranslation(['common', 'products']);
   const [loaded, setLoaded] = useState(false);
   // 使用productData中的home分类产品数据
   const products = productData.home;
 
-  const heroImages = [
-    {
-      url: '/images/products/1.png',
-      title: '创新科技的未来',
-      subtitle: 'EtherSpark - 智能生活的全新定义'
-    },
-    {
-      url: '/images/products/2.png',
-      title: '连接智能家居',
-      subtitle: '打造无缝连接的智慧生活体验'
-    },
-    {
-      url: '/images/products/3.png',
-      title: '科技改变生活',
-      subtitle: '让科技成为生活的得力助手'
-    }
-  ];
+  // 根据当前语言获取合适的英雄图片数据
+  const getHeroImages = () => {
+    return [
+      {
+        url: '/images/products/1.png',
+        title: t('home.hero1.title', '创新科技的未来'),
+        subtitle: t('home.hero1.subtitle', 'EtherSpark - 智能生活的全新定义')
+      },
+      {
+        url: '/images/products/2.png',
+        title: t('home.hero2.title', '连接智能家居'),
+        subtitle: t('home.hero2.subtitle', '打造无缝连接的智慧生活体验')
+      },
+      {
+        url: '/images/products/3.png',
+        title: t('home.hero3.title', '科技改变生活'),
+        subtitle: t('home.hero3.subtitle', '让科技成为生活的得力助手')
+      }
+    ];
+  };
+
+  const heroImages = getHeroImages();
 
   useEffect(() => {
     // 添加平滑滚动
@@ -70,6 +79,19 @@ const Home: React.FC = () => {
       clearTimeout(timer);
     };
   }, []);
+
+  // 当语言改变时，确保英雄图片数据更新
+  useEffect(() => {
+    // 这里不需要额外操作，React 会在语言改变时自动重新渲染组件
+    console.log('Language changed in Home component:', i18n.language);
+    // 强制重新渲染产品列表
+    const newProducts = [...products];
+    // 刷新组件
+    setLoaded(false);
+    setTimeout(() => {
+      setLoaded(true);
+    }, 100);
+  }, [i18n.language]);
 
   // 产品卡片渐入动画的延迟
   const getAnimationDelay = (index: number) => `${0.1 + index * 0.1}s`;
@@ -150,7 +172,7 @@ const Home: React.FC = () => {
                   fontSize: product.featured ? '20px' : '16px',
                   fontWeight: product.featured ? '500' : '400'
                 }}>
-                  {product.name}
+                  {t(`products.products.${product.id}.name`, { ns: 'products', defaultValue: product.name })}
                 </ProductName>
                 <ProductPrice style={{
                   fontSize: product.featured ? '16px' : '14px'
@@ -158,11 +180,10 @@ const Home: React.FC = () => {
                   {product.price}
                 </ProductPrice>
                 {product.tag && (
-                  <ProductStatus style={{
-                    fontSize: product.featured ? '14px' : '12px'
-                  }}>
-                    {product.tag}
-                  </ProductStatus>
+                  <TranslatedTag 
+                    tag={product.tag} 
+                    fontSize={product.featured ? '14px' : '12px'} 
+                  />
                 )}
               </ProductInfo>
             </ProductCard>
@@ -172,9 +193,9 @@ const Home: React.FC = () => {
 
       <NewsletterSection>
         <NewsletterContent>
-          <NewsletterTitle>订阅我们的新闻通讯</NewsletterTitle>
+          <NewsletterTitle>{t('home.newsletter.title', '订阅我们的新闻通讯')}</NewsletterTitle>
           <NewsletterDescription>
-            获取最新产品信息、技术资讯和独家优惠
+            {t('home.newsletter.description', '获取最新产品信息、技术资讯和独家优惠')}
           </NewsletterDescription>
           {/* <Link to="/products" style={{ 
             display: 'inline-block',

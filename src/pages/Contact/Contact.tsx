@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   ContactContainer,
   ContactHeader,
@@ -27,6 +28,7 @@ import {
 } from './ContactStyles';
 
 const Contact: React.FC = () => {
+  const { t, i18n } = useTranslation(['common']);
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -68,7 +70,7 @@ const Contact: React.FC = () => {
   return (
     <ContactContainer>
       <ContactHeader>
-        <ContactTitle>联系我们</ContactTitle>
+        <ContactTitle>{t('contact.title')}</ContactTitle>
       </ContactHeader>
       
       {/* 第一部分：联系表单 */}
@@ -77,29 +79,29 @@ const Contact: React.FC = () => {
           <ContactInfo>
             <InfoItem>
               <InfoText>
-                <InfoTitle>地址</InfoTitle>
+                <InfoTitle>{t('contact.info.address')}</InfoTitle>
                 <InfoDetail>莫斯科, Каширское шоссе 61к3А, павильон Б26</InfoDetail>
               </InfoText>
             </InfoItem>
             
             <InfoItem>
               <InfoText>
-                <InfoTitle>电话</InfoTitle>
+                <InfoTitle>{t('contact.info.phone')}</InfoTitle>
                 <InfoDetail>+7 (996) 713-12-38</InfoDetail>
               </InfoText>
             </InfoItem>
             
             <InfoItem>
               <InfoText>
-                <InfoTitle>电子邮箱</InfoTitle>
+                <InfoTitle>{t('contact.info.email')}</InfoTitle>
                 <InfoDetail>info@etherspark.ru</InfoDetail>
               </InfoText>
             </InfoItem>
             
             <InfoItem>
               <InfoText>
-                <InfoTitle>工作时间</InfoTitle>
-                <InfoDetail>周一至周五: 9:00 - 18:00</InfoDetail>
+                <InfoTitle>{t('contact.info.workingHours')}</InfoTitle>
+                <InfoDetail>{t('contact.info.workingHoursValue')}</InfoDetail>
               </InfoText>
             </InfoItem>
           </ContactInfo>
@@ -108,7 +110,7 @@ const Contact: React.FC = () => {
             <ContactForm onSubmit={handleSubmit}>
               {formSubmitted && (
                 <SuccessMessage>
-                  您的消息已成功发送！我们会尽快回复您。
+                  {t('contact.form.success')}
                 </SuccessMessage>
               )}
               
@@ -119,7 +121,7 @@ const Contact: React.FC = () => {
                   name="name"
                   value={formState.name}
                   onChange={handleInputChange}
-                  placeholder="您的姓名"
+                  placeholder={t('contact.form.name')}
                   required
                 />
               </FormGroup>
@@ -131,7 +133,7 @@ const Contact: React.FC = () => {
                   name="email"
                   value={formState.email}
                   onChange={handleInputChange}
-                  placeholder="您的邮箱"
+                  placeholder={t('contact.form.email')}
                   required
                 />
               </FormGroup>
@@ -143,12 +145,12 @@ const Contact: React.FC = () => {
                   rows={5}
                   value={formState.message}
                   onChange={handleInputChange}
-                  placeholder="您的留言"
+                  placeholder={t('contact.form.message')}
                   required
                 />
               </FormGroup>
               
-              <SubmitButton type="submit">发送消息</SubmitButton>
+              <SubmitButton type="submit">{t('contact.form.submit')}</SubmitButton>
             </ContactForm>
           </FormSection>
         </ContactContent>

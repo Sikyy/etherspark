@@ -14,7 +14,6 @@ import ProductLinks from './pages/Products/ProductLinks';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Business from './pages/Business/Business';
-import './i18n'; // 导入i18n配置
 
 function App() {
   const { i18n } = useTranslation();

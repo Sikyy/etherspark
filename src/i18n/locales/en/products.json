@@ -1,0 +1,638 @@
+{
+  "specifications": {
+    "title": "Product Specifications",
+    "Размер": "Size",
+    "Вес": "Weight",
+    "Тип экрана": "Screen Type",
+    "Диапазон температуры": "Temperature Range",
+    "Диапазон влажности": "Humidity Range",
+    "Погрешность точности": "Accuracy Error",
+    "Характеристики батареи": "Battery Specifications",
+    "Максимальный диапазон": "Maximum Range",
+    "Линейная точность": "Linear Accuracy",
+    "Точность угла": "Angle Accuracy",
+    "Ёмкость батареи": "Battery Capacity",
+    "Основные режимы": "Main Modes",
+    "Диапазон обнаруживаемого напряжения": "Detectable Voltage Range",
+    "Частотный диапазон": "Frequency Range",
+    "Метод оповещения": "Alert Method",
+    "Тип батареи": "Battery Type",
+    "Диапазон TDS": "TDS Range",
+    "Разрешение": "Resolution",
+    "Точность измерений": "Measurement Accuracy",
+    "Питание": "Power Supply",
+    "Материал": "Material",
+    "Номинальная мощность": "Rated Power",
+    "Скорость вращения": "Rotation Speed",
+    "Рабочее напряжение": "Operating Voltage",
+    "Время зарядки": "Charging Time",
+    "Время работы": "Working Time",
+    "Ёмкость": "Capacity",
+    "Цвет": "Color",
+    "Подходит для питомцев": "Suitable for Pets",
+    "values": {
+      "178мм * 177мм * 335мм": "178mm * 177mm * 335mm",
+      "210мм * 210мм * 142мм": "210mm * 210mm * 142mm",
+      "1761г": "1761g",
+      "650г": "650g",
+      "4л": "4L",
+      "3,2л": "3.2L",
+      "Белый": "White",
+      "ABS + SUS304": "ABS + SUS304",
+      "ABS": "ABS",
+      "кошек, а также мелких и средних собак": "cats and small to medium-sized dogs"
+    }
+  },
+  "features": {
+    "title": "Product Features",
+    "translations": {
+      "WiFi-соединение, удалённое управление через приложение": "WiFi connection, remote control via app",
+      "Кормление в одно касание，Планирование кормления，Напоминание о нехватке корма": "One-touch feeding, feeding scheduling, food shortage reminder",
+      "Разборная и моющаяся конструкция": "Detachable and washable design",
+      "Все материалы — пищевого качества": "All materials are food grade",
+      "Опциональная камера": "Optional camera",
+      "Автоматическое отключение при отсутствии воды, бесшумный насос": "Automatic shutdown when water is absent, silent pump",
+      "Питание: USB-зарядка и аккумулятор (4000 мАч)": "Power supply: USB charging and battery (4000 mAh)",
+      "Лёгкость разборки и очистки": "Easy to disassemble and clean",
+      "3 режима работы: индукционный, таймерный и непрерывный": "3 working modes: induction, timer, and continuous"
+    }
+  },
+  "categories": {
+    "news": "New Products",
+    "tools": "Tools",
+    "scooter": "Electric Scooters",
+    "life": "Life Products",
+    "pet": "Pet Supplies",
+    "sound": "Audio",
+    "watch": "Watches",
+    "invehicle": "In-vehicle Products",
+    "home": "Home Products",
+    "featured": "Featured Products"
+  },
+  "relatedProducts": "Related Products",
+  "notFound": "Product Not Found",
+  "buy": "Buy",
+  "tags": {
+    "新品": "New",
+    "热销": "Hot",
+    "促销": "Sale",
+    "限量版": "Limited Edition",
+    "new": "New",
+    "hot": "Hot",
+    "sale": "Sale",
+    "limited": "Limited Edition",
+    "即将上市": "Coming Soon"
+  },
+  "products": {
+    "TH1": {
+      "name": "Temperature & Humidity Clock",
+      "description": "Clock with temperature and humidity display for indoor environment monitoring",
+      "features": [
+        "4.3-inch LCD screen: large and clear",
+        "Type-C charging design, large capacity lithium battery, longer usage time",
+        "Multiple usage modes: desktop/wall-mounted/magnetic",
+        "Timed scene settings, one-click activation of preset modes",
+        "Remote control, manage home devices anytime, anywhere"
+      ]
+    },
+    "LR1": {
+      "name": "Laser Range Finder",
+      "description": "High-precision laser range finder, fast and accurate measurements",
+      "features": [
+        "Distance measurement, line projection and angle measurement in one device",
+        "17 practical functions to meet daily needs",
+        "High-quality TFT color display",
+        "Timed scene settings, one-click activation of preset modes"
+      ]
+    },
+    "FR1": {
+      "name": "Flexible Electronic Ruler",
+      "description": "Flexible design, suitable for various measurement scenarios",
+      "features": [
+        "Small and portable",
+        "Can measure any surface, flat or uneven",
+        "5 measurement modes to adapt to different scenarios"
+      ]
+    },
+    "IP1": {
+      "name": "Induction Pen",
+      "description": "Non-contact voltage detection tool",
+      "features": [
+        "NCV (Non-contact Voltage) detection",
+        "Quick power check with one click",
+        "Highly sensitive sensor probe"
+      ]
+    },
+    "WP1": {
+      "name": "Water Quality Test Pen",
+      "description": "Quickly detect water TDS value and temperature",
+      "features": [
+        "Minimalist pen design",
+        "One-click fast and accurate measurement",
+        "Simultaneous measurement of TDS value and water temperature"
+      ]
+    },
+    "ES1": {
+      "name": "Electric Screwdriver",
+      "description": "Compact and portable, suitable for daily household use",
+      "features": [
+        "Compact and portable, easy to carry",
+        "Type-C charging port, convenient charging",
+        "One-click operation, simple to use"
+      ]
+    },
+    "EB1": {
+      "name": "Multi-function Electric Drill",
+      "description": "Versatile electric drill suitable for various home repair scenarios",
+      "features": [
+        "Multi-function design, drilling and screwdriver functions in one",
+        "Large capacity battery, long working time",
+        "Ergonomic handle, comfortable grip"
+      ]
+    },
+    "SI1": {
+      "name": "Solar Inverter",
+      "description": "High-efficiency solar conversion equipment, environmentally friendly",
+      "features": [
+        "High-efficiency conversion, energy saving",
+        "Intelligent system control, safe and stable",
+        "Compact design, easy installation"
+      ]
+    },
+    "PI1": {
+      "name": "Programmable Power Supply",
+      "description": "High-precision programmable power supply suitable for professional testing environments",
+      "features": [
+        "Precise voltage control, high stability",
+        "Multiple output modes to meet different needs",
+        "Intelligent temperature control system, safe and reliable"
+      ]
+    },
+    "MF1": {
+      "name": "Multi-function Measuring Instrument",
+      "description": "Multi-function measuring device, one machine for multiple uses",
+      "features": [
+        "Multi-parameter measurement, comprehensive functions",
+        "High-precision sensors, accurate data",
+        "Large screen display, clear and intuitive"
+      ]
+    },
+    "S1": {
+      "name": "Smart Switch",
+      "description": "Smart home control switch, remote operation",
+      "features": [
+        "Smart networking, remote control",
+        "Timer function, automated operation",
+        "Energy-saving design, reduces power consumption"
+      ]
+    },
+    "R1": {
+      "name": "Smart Router",
+      "description": "High-speed smart network router, wide coverage",
+      "features": [
+        "Wide range coverage, stable signal",
+        "Multi-device connection, high-speed transmission",
+        "Intelligent security protection, data encryption"
+      ]
+    },
+    "GF1": {
+      "name": "Smart Pet Feeder",
+      "description": "Automatic pet feeding device with remote control",
+      "features": [
+        "WiFi connection, remote control via app",
+        "One-touch feeding, feeding scheduling, food shortage reminder",
+        "Detachable and washable design",
+        "All materials are food grade",
+        "Optional camera"
+      ],
+      "specifications": {
+        "Size": "178mm * 177mm * 335mm",
+        "Weight": "1761g",
+        "Capacity": "4L",
+        "Color": "White",
+        "Material": "ABS + SUS304",
+        "Suitable for Pets": "cats and small to medium-sized dogs"
+      }
+    },
+    "GW1": {
+      "name": "Smart Pet Water Fountain",
+      "description": "Smart pet water fountain to keep water fresh",
+      "features": [
+        "Automatic shutdown when water is absent, silent pump",
+        "Power supply: USB charging and battery (4000 mAh)",
+        "Easy to disassemble and clean",
+        "3 working modes: induction, timer, and continuous"
+      ],
+      "specifications": {
+        "Size": "210mm * 210mm * 142mm",
+        "Weight": "650g",
+        "Capacity": "3.2L",
+        "Color": "White",
+        "Material": "ABS",
+        "Suitable for Pets": "cats and small to medium-sized dogs"
+      }
+    },
+    "PD1": {
+      "name": "Smart Pet Dryer",
+      "description": "Low-noise drying device designed for pets",
+      "features": [
+        "Gentle drying technology that doesn't harm pet fur",
+        "Ultra-low noise design to reduce pet anxiety",
+        "Multiple temperature settings for different pet needs"
+      ],
+      "specifications": {
+        "Size": "450mm * 350mm * 500mm",
+        "Weight": "5800g",
+        "Rated Power": "1200W",
+        "Color": "White",
+        "Material": "ABS + Stainless Steel",
+        "Temperature Range": "30-70°C"
+      }
+    },
+    "CT1": {
+      "name": "Automatic Cat Litter Box",
+      "description": "Smart automatic cleaning cat litter box to reduce daily maintenance",
+      "features": [
+        "Automatic cleaning system, saving time and effort",
+        "Effective deodorizing design, keeping indoor air fresh",
+        "Smart sensing technology to identify cat usage"
+      ],
+      "specifications": {
+        "Size": "520mm * 480mm * 420mm",
+        "Weight": "4500g",
+        "Power Supply": "220V/50Hz",
+        "Capacity": "5L",
+        "Color": "Gray",
+        "Material": "ABS + PP"
+      }
+    },
+    "NM1": {
+      "name": "Pet Grooming Machine",
+      "description": "Multi-functional pet care device",
+      "features": [
+        "Gentle massage function to promote blood circulation",
+        "Adjustable intensity suitable for different pet needs",
+        "Ergonomic design for comfortable use"
+      ],
+      "specifications": {
+        "Size": "180mm * 80mm * 50mm",
+        "Weight": "350g",
+        "Working Time": "4 hours",
+        "Charging Time": "2 hours",
+        "Color": "Blue/Pink",
+        "Material": "ABS + Silicone"
+      }
+    },
+    "PC1": {
+      "name": "Smart Pet Brush",
+      "description": "Intelligently designed pet grooming tool",
+      "features": [
+        "Efficiently removes loose fur to reduce shedding problems",
+        "Comfortable design that doesn't harm pet skin",
+        "Easy to clean and maintain"
+      ],
+      "specifications": {
+        "Size": "175mm * 90mm * 40mm",
+        "Weight": "120g",
+        "Material": "ABS + Stainless Steel",
+        "Color": "Blue",
+        "Suitable for Pets": "cats and all types of dogs"
+      }
+    },
+    "GS1": {
+      "name": "Pet Hair Clipper",
+      "description": "Professional pet trimming tool, safe and efficient",
+      "features": [
+        "Low noise design to reduce pet anxiety",
+        "Adjustable blade head suitable for different fur lengths",
+        "Wireless design for flexible use"
+      ],
+      "specifications": {
+        "Size": "180mm * 45mm * 45mm",
+        "Weight": "300g",
+        "Battery Capacity": "2000mAh",
+        "Working Time": "120 minutes",
+        "Charging Time": "3 hours",
+        "Material": "ABS + Stainless Steel Blade"
+      }
+    },
+    "GC1": {
+      "name": "Pet Comb",
+      "description": "Efficient fur removal pet grooming tool",
+      "features": [
+        "Ergonomic design for comfortable use",
+        "Effectively removes loose fur and tangles",
+        "Suitable for various types of pet fur"
+      ],
+      "specifications": {
+        "Size": "170mm * 85mm * 30mm",
+        "Weight": "85g",
+        "Material": "PP + Stainless Steel Teeth",
+        "Color": "Green",
+        "Suitable for Pets": "short-haired and long-haired pets"
+      }
+    },
+    "NC1": {
+      "name": "Pet Nail Clipper",
+      "description": "Safe and efficient pet nail trimming tool",
+      "features": [
+        "Precise cutting to avoid injury",
+        "Non-slip handle for stable operation",
+        "Suitable for pets of various sizes"
+      ],
+      "specifications": {
+        "Size": "140mm * 55mm * 15mm",
+        "Weight": "75g",
+        "Material": "Stainless Steel + Rubber Handle",
+        "Color": "Silver/Black",
+        "Suitable for Pets": "cats and dogs"
+      }
+    },
+    "DH1": {
+      "name": "Pet Harness",
+      "description": "Comfortable and safe pet leashing device",
+      "features": [
+        "Breathable material for comfortable wearing",
+        "Adjustable size suitable for different body types",
+        "Reflective design for night safety"
+      ],
+      "specifications": {
+        "Size": "Adjustable, fits chest circumference 20-60cm",
+        "Weight": "120g",
+        "Material": "Nylon + Mesh Fabric",
+        "Color": "Blue/Red/Black",
+        "Suitable for Pets": "small to medium-sized dogs"
+      }
+    },
+    "TR1": {
+      "name": "Pet Leash",
+      "description": "High-quality pet outdoor leash",
+      "features": [
+        "Durable material with strong tensile strength",
+        "Reasonable length for proper control",
+        "Comfortable handle for long-time use without fatigue"
+      ],
+      "specifications": {
+        "Length": "1.5m (extendable to 3m)",
+        "Weight": "250g",
+        "Material": "Nylon + ABS",
+        "Load Capacity": "50kg",
+        "Color": "Black/Blue",
+        "Suitable for Pets": "small to medium-sized dogs"
+      }
+    },
+    "GB1": {
+      "name": "Pet Waste Bag Dispenser",
+      "description": "Portable pet waste cleaning bag dispenser",
+      "features": [
+        "Portable design, easy to carry",
+        "Large capacity to reduce replacement frequency",
+        "Waterproof material suitable for various weather conditions"
+      ],
+      "specifications": {
+        "Size": "85mm * 45mm * 45mm",
+        "Weight": "60g",
+        "Capacity": "Holds 15 bags",
+        "Material": "ABS + Silicone",
+        "Color": "Green/Blue",
+        "Application Scenario": "outdoor pet walking"
+      }
+    },
+    "Snail Car": {
+      "name": "Pet Toy Car",
+      "description": "Fun interactive pet toy",
+      "features": [
+        "Safe materials, non-toxic",
+        "Fun design to increase interaction",
+        "Chew-resistant and durable for long-lasting play"
+      ],
+      "specifications": {
+        "Size": "120mm * 80mm * 60mm",
+        "Weight": "150g",
+        "Material": "TPR Eco-friendly Material",
+        "Color": "Multicolored",
+        "Suitable for Pets": "small dogs and cats"
+      }
+    },
+    "featured-1": {
+      "name": "BORK T782 Toaster",
+      "description": "Efficient dual-sided toasting, intelligent temperature control system",
+      "features": [
+        "Unique dual-sided toasting technology, reducing toasting time by 50%",
+        "Intelligent temperature control system, precise temperature control to 1°C",
+        "6 toasting modes to meet different food requirements",
+        "Large-sized baking tray, can toast multiple slices of bread at once",
+        "High-quality stainless steel housing, durable and easy to clean",
+        "Independent crumb tray, easy to clean"
+      ]
+    },
+    "featured-2": {
+      "name": "BORK P513 Table Fan",
+      "description": "Intelligent temperature control with silent design, remote control",
+      "features": [
+        "Intelligent temperature control, automatically adjusts fan speed according to the environment",
+        "Ultra-quiet design, operating noise as low as 20 decibels",
+        "9-speed adjustment to meet different needs",
+        "Remote control, mobile APP operation anytime",
+        "Timer function, supports 1-8 hour timing",
+        "Natural wind mode, simulates natural breeze effect"
+      ]
+    },
+    "home-1": {
+      "name": "BORK T782 Toaster",
+      "description": "Efficient dual-sided toasting, intelligent temperature control system"
+    },
+    "home-2": {
+      "name": "BORK P513 Table Fan",
+      "description": "Intelligent temperature control with silent design, remote control"
+    },
+    "home-3": {
+      "name": "BORK A705 Air Purifier & Humidifier",
+      "description": "Efficient purification, intelligent humidification, silent design"
+    },
+    "home-4": {
+      "name": "BORK A802 RAIN Air Purifier & Humidifier",
+      "description": "Efficient purification, intelligent humidification, silent design"
+    },
+    "home-5": {
+      "name": "BORK H503 Humidifier",
+      "description": "Large capacity water tank, intelligent humidity control"
+    },
+    "home-6": {
+      "name": "Smart Coffee Machine",
+      "description": "Automatic grinding, precise temperature control, multiple coffee preparation"
+    },
+    "home-7": {
+      "name": "Multi-function Steam Iron",
+      "description": "Powerful steam penetration, quick wrinkle removal, convenient operation"
+    },
+    "sound-1": {
+      "name": "SP1 Sound System",
+      "description": "High-fidelity sound quality, Bluetooth connectivity"
+    },
+    "sound-2": {
+      "name": "SP2 Portable Speaker",
+      "description": "Compact design, powerful sound, long battery life"
+    },
+    "sound-3": {
+      "name": "SP3 Wireless Earbuds",
+      "description": "Ergonomic design, noise cancellation, crystal clear sound"
+    },
+    "sound-4": {
+      "name": "High-fidelity Floor Speaker",
+      "description": "Outstanding sound quality, powerful bass, classic appearance design"
+    },
+    "sound-5": {
+      "name": "Desktop Bluetooth Speaker",
+      "description": "Wireless connection, stereo sound effect, stylish appearance"
+    },
+    "sound-6": {
+      "name": "Gaming Headset",
+      "description": "Immersive sound effects, comfortable for long-term wear, clear microphone"
+    },
+    "sound-7": {
+      "name": "Smart Speaker",
+      "description": "Voice control, smart assistant functions, quality sound"
+    },
+    "sound-8": {
+      "name": "Professional Recording Microphone",
+      "description": "High-sensitivity pickup, low noise, professional recording quality"
+    },
+    "life-1": {
+      "name": "Smart Air Conditioner",
+      "description": "Energy efficient, quiet operation, smart temperature control"
+    },
+    "life-2": {
+      "name": "MD1 Smart Door Lock",
+      "description": "Automatic sensing, timer control, quiet motor"
+    },
+    "life-3": {
+      "name": "MS1 Smart Security System",
+      "description": "Multiple unlock methods, anti-theft alarm, remote control"
+    },
+    "life-4": {
+      "name": "Smart Mattress",
+      "description": "Sleep monitoring, automatic hardness adjustment, constant temperature control"
+    },
+    "life-5": {
+      "name": "Smart Curtains",
+      "description": "Automatic sensing, timer control, quiet motor"
+    },
+    "life-6": {
+      "name": "Smart Scale",
+      "description": "Multiple body index monitoring, data synchronization, health management"
+    },
+    "life-7": {
+      "name": "Portable Massager",
+      "description": "Multiple massage modes, relieves fatigue, portable design"
+    },
+    "life-8": {
+      "name": "Smart Desk Lamp",
+      "description": "Eye protection design, multi-level brightness adjustment, smart control"
+    },
+    "life-9": {
+      "name": "Air Purifier",
+      "description": "Efficient filtration, quiet operation, air quality monitoring"
+    },
+    "life-10": {
+      "name": "Smart Trash Can",
+      "description": "Automatic sensing, sealed deodorization, large capacity design"
+    },
+    "life-11": {
+      "name": "Electric Toothbrush",
+      "description": "Multiple cleaning modes, smart timing, long-lasting battery"
+    },
+    "life-12": {
+      "name": "Smart Dishwasher",
+      "description": "High-temperature disinfection, water-saving design, multiple washing modes"
+    },
+    "life-13": {
+      "name": "Portable Humidifier",
+      "description": "Quiet design, large capacity water tank, suitable for home and office use"
+    },
+    "life-14": {
+      "name": "Smart Flower Pot",
+      "description": "Automatic watering, light monitoring, plant growth data recording"
+    },
+    "life-15": {
+      "name": "Smart Fitness Equipment",
+      "description": "Multiple training modes, data recording, smart assistance"
+    },
+    "life-16": {
+      "name": "Smart Bracelet",
+      "description": "Health monitoring, exercise tracking, message reminders"
+    },
+    "watch-1": {
+      "name": "WB1 Smart Watch",
+      "description": "Health monitoring, sports tracking, long battery life"
+    },
+    "watch-3": {
+      "name": "WF1 Fitness Tracker",
+      "description": "Accurate heart rate monitoring, sleep tracking, water resistant"
+    },
+    "watch-4": {
+      "name": "Business Smart Watch",
+      "description": "Classic design, smart notifications, long-lasting battery"
+    },
+    "watch-5": {
+      "name": "Sports Smart Watch",
+      "description": "Multiple sport modes, GPS positioning, heart rate monitoring"
+    },
+    "watch-6": {
+      "name": "Fashion Smart Watch",
+      "description": "Slim design, health monitoring, personalized watch faces"
+    },
+    "scooter-1": {
+      "name": "Electric Food Blender",
+      "description": "High-speed motor, multi-function attachments, easy to clean"
+    },
+    "scooter-2": {
+      "name": "High-Speed Blender",
+      "description": "Powerful motor, multi-function mixing, intelligent program control"
+    },
+    "scooter-3": {
+      "name": "Electric Scooter - Light Version",
+      "description": "Lightweight design, portable folding, suitable for short commutes"
+    },
+    "scooter-4": {
+      "name": "Electric Scooter - Off-road Version",
+      "description": "Powerful drive, large wheel design, adapts to various road conditions"
+    },
+    "news-1": {
+      "name": "New Smart Watch",
+      "description": "New design, multi-function monitoring, extended standby"
+    },
+    "news-2": {
+      "name": "New Wireless Earphones",
+      "description": "High-definition sound quality, active noise cancellation, long-lasting battery"
+    },
+    "news-3": {
+      "name": "New Smart Bracelet",
+      "description": "Slim design, all-day health monitoring, waterproof function"
+    },
+    "news-4": {
+      "name": "Smart Temperature Control Cup",
+      "description": "Precise temperature control, long-lasting heat preservation, smart water drinking reminders"
+    },
+    "news-5": {
+      "name": "Portable Bluetooth Speaker",
+      "description": "Compact design, powerful sound effects, waterproof function"
+    },
+    "invehicle-1": {
+      "name": "Car Air Purifier",
+      "description": "Efficient filtration, compact design, suitable for in-car use"
+    },
+    "invehicle-2": {
+      "name": "Car Charger",
+      "description": "Fast charging, multi-port design, compatible with various devices"
+    },
+    "invehicle-3": {
+      "name": "Car Bluetooth Receiver",
+      "description": "Wireless music playback, hands-free calling, easy installation"
+    },
+    "invehicle-4": {
+      "name": "Car Navigation",
+      "description": "High-definition display, real-time traffic conditions, intelligent route planning"
+    }
+  }
+} 
