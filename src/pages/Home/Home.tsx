@@ -161,7 +161,7 @@ const Home: React.FC = () => {
                         key={index} 
                         color={colorOption.color} 
                         active={index === 0}
-                        title={colorOption.name}
+                        title={t(`products.${product.id}.colorOptions.${index}`, { ns: 'products', defaultValue: colorOption.name })}
                       />
                     ))}
                   </ColorOptions>
@@ -172,7 +172,7 @@ const Home: React.FC = () => {
                   fontSize: product.featured ? '20px' : '16px',
                   fontWeight: product.featured ? '500' : '400'
                 }}>
-                  {t(`products.products.${product.id}.name`, { ns: 'products', defaultValue: product.name })}
+                  {t(`products.${product.id}.name`, { ns: 'products', defaultValue: product.name })}
                 </ProductName>
                 <ProductPrice style={{
                   fontSize: product.featured ? '16px' : '14px'
