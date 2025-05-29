@@ -88,12 +88,23 @@
       "name": "Temperature & Humidity Clock",
       "description": "Clock with temperature and humidity display for indoor environment monitoring",
       "features": [
-        "4.3-inch LCD screen: large and clear",
-        "Type-C charging design, large capacity lithium battery, longer usage time",
-        "Multiple usage modes: desktop/wall-mounted/magnetic",
-        "Timed scene settings, one-click activation of preset modes",
-        "Remote control, manage home devices anytime, anywhere"
-      ]
+        "Large screen display, clear and easy to read data",
+        "Ultra sensitive sensing, precise detection",
+        "Large capacity lithium battery, long-lasting endurance",
+        "Power off time memory, no need for repeated settings",
+        "Multiple usage modes, magnetic suction, adhesive, and standing"
+      ],
+      "specifications": {
+        "Product Size": "86 * 86 * 13.3mm",
+        "Net Weight of Product": "75g",
+        "Main Material": "ABS",
+        "Temperature Range  ": "-9.9～60℃（14～140°F）",
+        "Humidity Range": "10%～99%RH",
+        "Resolution": "0.1℃ / 1%RH",
+        "Refresh Rate": "60秒 / 次",
+        "Battery Capacity": "450mAh",
+        "Charging Interface": "Type-c"
+      }
     },
     "LR1": {
       "name": "Laser Range Finder",
