@@ -4,7 +4,7 @@ export const toolsProducts: Product[] = [
   {
     id: 'TH1',
     numericId: 201,
-    name: 'Часы с индикатором температуры и влажности',
+    name: '激光投线测距仪',
     description: '自动识别螺丝类型，精准调节扭矩',
     price: '1,499₽',
     image: '/images/tools/scene/TH1/TH1_main.jpg',
@@ -13,28 +13,18 @@ export const toolsProducts: Product[] = [
     gallery: [
       {
         src: '/images/tools/scene/TH1/TH1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
       },
       {
         src: '/images/tools/scene/TH1/TH1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
       },
       {
         src: '/images/tools/scene/TH1/TH1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
       },
       {
         src: '/images/tools/scene/TH1/TH1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
       },
       {
         src: '/images/tools/scene/TH1/TH1场景图5.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
       }
     ],
     features: [
@@ -67,23 +57,15 @@ export const toolsProducts: Product[] = [
     gallery: [
       {
         src: '/images/tools/scene/LR1/LR1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
       },
       {
         src: '/images/tools/scene/LR1/LR1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
       },
       {
         src: '/images/tools/scene/LR1/LR1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
       },
       {
         src: '/images/tools/scene/LR1/LR1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
       }
     ],
     features: [
@@ -115,28 +97,18 @@ export const toolsProducts: Product[] = [
     gallery: [
       {
         src: '/images/tools/scene/FR1/FR1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
       },
       {
         src: '/images/tools/scene/FR1/FR1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
       },
       {
         src: '/images/tools/scene/FR1/FR1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
       },
       {
         src: '/images/tools/scene/FR1/FR1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
       },
       {
         src: '/images/tools/scene/FR1/FR1场景图5.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
       }
     ],
     features: [
@@ -164,33 +136,23 @@ export const toolsProducts: Product[] = [
     name: 'Индукционная ручка',
     description: '智能恒速控制，多种抛光头可更换',
     price: '799₽',
-    image: '/images/tools/scene/IP1/IP1_main.jpg',
+    image: '/images/tools/scene/IP1/IP1主图.jpg',
     cardImage: '/images/tools/IP1.png',
     gallery: [
       {
-        src: '/images/tools/scene/FR1/FR1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
+        src: '/images/tools/scene/IP1/IP1场景图1.jpg',
       },
       {
-        src: '/images/tools/scene/FR1/FR1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
+        src: '/images/tools/scene/IP1/IP1场景图2.jpg',
       },
       {
-        src: '/images/tools/scene/FR1/FR1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
+        src: '/images/tools/scene/IP1/IP1场景图3.jpg',
       },
       {
-        src: '/images/tools/scene/FR1/FR1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/IP1/IP1场景图4.jpg',
       },
       {
-        src: '/images/tools/scene/FR1/FR1场景图5.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/IP1/IP1场景图5.jpg',
       }
     ],
     features: [
@@ -267,28 +229,20 @@ export const toolsProducts: Product[] = [
     name: 'Электрическая отвёртка',
     description: '绿光技术，高精度自动校准，户内户外均可使用',
     price: '3,499₽',
-    image: '/images/tools/scene/ES1/ES1_main.jpg',
+    image: '/images/tools/scene/ES1/ES1主图.jpg',
     cardImage: '/images/tools/ES1.png',
     gallery: [
       {
-        src: '/images/tools/scene/WP1/WP1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
+        src: '/images/tools/scene/ES1/ES1场景图1.jpg',
       },
       {
-        src: '/images/tools/scene/WP1/WP1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
+        src: '/images/tools/scene/ES1/ES1场景图2.jpg',
       },
       {
-        src: '/images/tools/scene/WP1/WP1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
+        src: '/images/tools/scene/ES1/ES1场景图3.jpg',
       },
       {
-        src: '/images/tools/scene/WP1/WP1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/ES1/ES1场景图4.jpg',
       }
     ],
     features: [
@@ -317,28 +271,20 @@ export const toolsProducts: Product[] = [
     name: 'Электрический полировщик',
     description: '绿光技术，高精度自动校准，户内户外均可使用',
     price: '7,199₽',
-    image: '/images/tools/scene/EB1/EB1_main.jpg',
+    image: '/images/tools/scene/EB1/EB1主图.jpg',
     cardImage: '/images/tools/EB1.png',
     gallery: [
       {
-        src: '/images/tools/scene/S1/S1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
+        src: '/images/tools/scene/EB1/EB1场景图1.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
+        src: '/images/tools/scene/EB1/EB1场景图2.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
+        src: '/images/tools/scene/EB1/EB1场景图3.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/EB1/EB1场景图4.jpg',
       }
     ],
     features: [
@@ -366,28 +312,20 @@ export const toolsProducts: Product[] = [
     name: 'Портативный электрический паяльник',
     description: '绿光技术，高精度自动校准，户内户外均可使用',
     price: '3,899₽',
-    image: '/images/tools/scene/SI1/SI1_main.jpg',
+    image: '/images/tools/scene/SI1/SI1主图.jpg',
     cardImage: '/images/tools/SI1.png',
     gallery: [
       {
-        src: '/images/tools/scene/S1/S1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
+        src: '/images/tools/scene/SI1/SI1场景图1.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
+        src: '/images/tools/scene/SI1/SI1场景图2.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
+        src: '/images/tools/scene/SI1/SI1场景图3.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/SI1/SI1场景图4.jpg',
       }
     ],
     features: [
@@ -415,28 +353,20 @@ export const toolsProducts: Product[] = [
     name: '等离子点火笔',
     description: '绿光技术，高精度自动校准，户内户外均可使用',
     price: '1,499₽',
-    image: '/images/tools/scene/PI1/PI1_main.jpg',
+    image: '/images/tools/scene/PI1/PI1主图.jpg',
     cardImage: '/images/tools/PI1.png',
     gallery: [
       {
-        src: '/images/tools/scene/S1/S1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
+        src: '/images/tools/scene/PI1/PI1场景图1.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
+        src: '/images/tools/scene/PI1/PI1场景图2.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
+        src: '/images/tools/scene/PI1/PI1场景图3.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/PI1/PI1场景图4.jpg',
       }
     ],
     features: [
@@ -457,31 +387,23 @@ export const toolsProducts: Product[] = [
   {
     id: 'MF1',
     numericId: 210,
-    name: 'Многофункциональный фонарь',
+    name: '多功能手电筒',
     description: '绿光技术，高精度自动校准，户内户外均可使用',
     price: '3,399₽',
-    image: '/images/tools/scene/MF1/MF1_main.jpg',
+    image: '/images/tools/scene/MF1/MF1主图.jpg',
     cardImage: '/images/tools/MF1.png',
     gallery: [
       {
-        src: '/images/tools/scene/S1/S1场景图1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
+        src: '/images/tools/scene/MF1/MF1场景图1.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
+        src: '/images/tools/scene/MF1/MF1场景图2.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
+        src: '/images/tools/scene/MF1/MF1场景图3.jpg',
       },
       {
-        src: '/images/tools/scene/S1/S1场景图4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
+        src: '/images/tools/scene/MF1/MF1场景图4.jpg',
       }
     ],
     features: [
