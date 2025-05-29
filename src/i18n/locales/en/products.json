@@ -1,35 +1,6 @@
 {
   "specifications": {
     "title": "Product Specifications",
-    "Размер": "Size",
-    "Вес": "Weight",
-    "Тип экрана": "Screen Type",
-    "Диапазон температуры": "Temperature Range",
-    "Диапазон влажности": "Humidity Range",
-    "Погрешность точности": "Accuracy Error",
-    "Характеристики батареи": "Battery Specifications",
-    "Максимальный диапазон": "Maximum Range",
-    "Линейная точность": "Linear Accuracy",
-    "Точность угла": "Angle Accuracy",
-    "Ёмкость батареи": "Battery Capacity",
-    "Основные режимы": "Main Modes",
-    "Диапазон обнаруживаемого напряжения": "Detectable Voltage Range",
-    "Частотный диапазон": "Frequency Range",
-    "Метод оповещения": "Alert Method",
-    "Тип батареи": "Battery Type",
-    "Диапазон TDS": "TDS Range",
-    "Разрешение": "Resolution",
-    "Точность измерений": "Measurement Accuracy",
-    "Питание": "Power Supply",
-    "Материал": "Material",
-    "Номинальная мощность": "Rated Power",
-    "Скорость вращения": "Rotation Speed",
-    "Рабочее напряжение": "Operating Voltage",
-    "Время зарядки": "Charging Time",
-    "Время работы": "Working Time",
-    "Ёмкость": "Capacity",
-    "Цвет": "Color",
-    "Подходит для питомцев": "Suitable for Pets",
     "产品尺寸": "Product Size",
     "产品净重": "Product Weight",
     "主要材质": "Main Material",
@@ -39,17 +10,34 @@
     "刷新频率": "Refresh Rate",
     "电池容量": "Battery Capacity",
     "充电接口": "Charging Port",
+    "测量范围":"Measurement Range",
+    "测量精度" :"Measurement Accuracy",
+    "单位":"Unit",
+    "检测电压":"Detectable Voltage",
+    "频率":"Frequency",
+    "报警方式":"Alarm Method",
+    "工作温度":"Operating Temperature",
+    "电池规格":"Battery Specification",
+    "手柄尺寸":"Handle Size",
+    "额定电压":"Rated Voltage",
+    "电动扭矩":"Electric Torque",
+    "空载转速":"No-load Speed",
+    "转速":"Speed",
+    "电机电压":"Motor Voltage",
+    "批头材质":"Batch Head Material",
+    "外壳材质":"Shell Material",
+    "手柄材质":"Handle Material",
+    "锁定结构":"Locking Structure",
     "values": {
-      "178мм * 177мм * 335мм": "178mm * 177mm * 335mm",
-      "210мм * 210мм * 142мм": "210mm * 210mm * 142mm",
-      "1761г": "1761g",
-      "650г": "650g",
-      "4л": "4L",
-      "3,2л": "3.2L",
-      "Белый": "White",
-      "ABS + SUS304": "ABS + SUS304",
-      "ABS": "ABS",
-      "кошек, а также мелких и средних собак": "cats and small to medium-sized dogs"
+      "铝合金":"Aluminum alloy",
+      "±0.5%，支持校准":"±0.5%，Supports calibration",
+      "声音和灯光报警":"Sound and light alarm",
+      "AG13纽扣电池":"AG13 button battery",
+      "LR44纽扣电池":"LR44 button battery",
+      "S2合金钢":"S2 alloy steel",
+      "5档 10000～28000r/min":"5th gear, 10000-28000r/min",
+      "锌合金、铝合金":"Zinc Alloy、Aluminum Alloy",
+      "弹性臂+锁扣":"elastic arm+locking buckle"
     }
   },
   "features": {
@@ -116,104 +104,220 @@
       }
     },
     "LR1": {
-      "name": "Laser Range Finder",
+      "name": "Laser Line Rangefinder",
       "description": "High-precision laser range finder, fast and accurate measurements",
       "features": [
-        "Distance measurement, line projection and angle measurement in one device",
-        "17 practical functions to meet daily needs",
-        "High-quality TFT color display",
-        "Timed scene settings, one-click activation of preset modes"
-      ]
+        "Color screen display, clearer reading",
+        "Distance measurement, line projection, angle, and three in one functionality",
+        "Large capacity lithium battery, long-lasting endurance",
+        "All aluminum metal body, exquisite texture",
+        "The whole machine is compact and easy to carry"
+      ],
+      "specifications": {
+        "产品尺寸": "100*33.5*16.5mm",
+        "产品净重": "62g",
+        "主要材质": "Aluminum alloy",
+        "测量范围": "0～40m",
+        "测量精度": "±2mm",
+        "单位": "0m / in / ft",
+        "电池容量": "480mAh",
+        "充电接口": "Type-c"
+      }
     },
     "FR1": {
       "name": "Flexible Electronic Ruler",
       "description": "Flexible design, suitable for various measurement scenarios",
       "features": [
-        "Small and portable",
-        "Can measure any surface, flat or uneven",
-        "5 measurement modes to adapt to different scenarios"
-      ]
+        "Suitable for multiple scenarios, even surfaces can be measured",
+        "Roller measurement, real-time data display",
+        "99.9 meter long distance measurement, 0.5% accuracy error",
+        "Large capacity lithium battery, 180 day ultra long standby time",
+        "Historical record query, not missing important data",
+        "Compact and round, easy to carry"
+      ],
+      "specifications": {
+        "产品尺寸": "114*50*25mm",
+        "产品净重": "31g",
+        "主要材质": "ABS",
+        "测量范围": "0～99m",
+        "测量精度": "±0.5%，支持校准",
+        "单位": "m / in / ft",
+        "电池容量": "480mAh",
+        "充电接口": "Type-c"
+      }
     },
     "IP1": {
-      "name": "Induction Pen",
+      "name": "Non-contact Electroprobe",
       "description": "Non-contact voltage detection tool",
       "features": [
-        "NCV (Non-contact Voltage) detection",
-        "Quick power check with one click",
-        "Highly sensitive sensor probe"
-      ]
+        "Non contact detection for safer troubleshooting",
+        "Intelligent zero line recognition, dual sound and light alarms",
+        "Pure copper induction tube, more sensitive and less prone to false alarms",
+        "Independent button, easy to check electric with one click",
+        "Pen style design, compact and small in size",
+        "Ultra low power consumption, persistent detection"
+      ],
+      "specifications": {
+        "产品尺寸": "148*18*18mm",
+        "产品净重": "19g",
+        "主要材质": "PC、ABS",
+        "检测电压": "100～380V AC",
+        "频率": "50 / 60Hz",
+        "报警方式": "声音和灯光报警",
+        "工作温度": "0～40℃",
+        "电池规格": "AG13纽扣电池"
+      }
     },
     "WP1": {
-      "name": "Water Quality Test Pen",
+      "name": "Water Quality Testing Pen",
       "description": "Quickly detect water TDS value and temperature",
       "features": [
         "Minimalist pen design",
         "One-click fast and accurate measurement",
         "Simultaneous measurement of TDS value and water temperature"
-      ]
+      ],
+      "specifications": {
+        "产品尺寸": "150*ø16mm",
+        "产品净重": "28g",
+        "主要材质": "ABS",
+        "测量范围": "0～4990PPM（mg/L）",
+        "测量精度": "±10%F.S.",
+        "分辨率": "1PPM",
+        "温度范围": "0～60℃",
+        "电池规格": "LR44 button battery"
+      }
     },
     "ES1": {
       "name": "Electric Screwdriver",
       "description": "Compact and portable, suitable for daily household use",
       "features": [
-        "Compact and portable, easy to carry",
-        "Type-C charging port, convenient charging",
-        "One-click operation, simple to use"
-      ]
+        "Forward and reverse design, one click start",
+        "210 revolutions per minute, high speed, effortless",
+        "10 categories, 25 batch heads, matching 95% of household working conditions",
+        "Magnetic absorption nano box, easy to access",
+        "Large capacity lithium battery, capable of tightening 350 screws at once",
+        "Hand to hand integration, easy to carry"
+      ],
+      "specifications": {
+        "产品尺寸": "194*80*28mm",
+        "手柄尺寸": "167*ø20mm",
+        "产品净重": "309g",
+        "主要材质": "S2 alloy steel",
+        "额定电压": "3.7V",
+        "电动扭矩": "0.2N-m",
+        "空载转速": "210r / min",
+        "电池容量": "300mAh",
+        "电池规格": "Type-c"
+      }
     },
     "EB1": {
       "name": "Multi-function Electric Drill",
       "description": "Versatile electric drill suitable for various home repair scenarios",
       "features": [
-        "Multi-function design, drilling and screwdriver functions in one",
-        "Large capacity battery, long working time",
-        "Ergonomic handle, comfortable grip"
-      ]
+        "High energy power motor, ultra high torque",
+        "Large capacity lithium battery, 50 minutes of high-speed no-load endurance",
+        "42 commonly used polishing head accessories, with 5-speed speed adjustment to meet the needs of different operations",
+        "High precision rotating bearings, one click locking, stable without shaking",
+        "Efficient heat dissipation duct design, fast cooling, and less likely to burn out the motor",
+        "Aircraft aluminum alloy sturdy body, comfortable grip, easy portability"
+      ],
+      "specifications": {
+        "产品尺寸": "250*97*45mm",
+        "手柄尺寸": "207*ø37mm",
+        "产品净重": "260g",
+        "主要材质": "铝合金",
+        "转速": "5档 10000～28000r/min",
+        "电机电压": "7.2V",
+        "电池容量": "1100mAh",
+        "充电接口": "Type-c"
+      }
     },
     "SI1": {
-      "name": "Solar Inverter",
+      "name": "Portable Electric Soldering Iron",
       "description": "High-efficiency solar conversion equipment, environmentally friendly",
       "features": [
-        "High-efficiency conversion, energy saving",
-        "Intelligent system control, safe and stable",
-        "Compact design, easy installation"
+        "65W high power, 8S rapid heating up",
+        "PID precise temperature control",
+        "PD/QC protocol, supports diverse power supply methods",
+        "10000 plug and unplug tests, ultra long lifespan",
+        "All aluminum metal body, exquisite texture"
       ]
     },
     "PI1": {
-      "name": "Programmable Power Supply",
+      "name": "Plasma Ignition Pen",
       "description": "High-precision programmable power supply suitable for professional testing environments",
       "features": [
-        "Precise voltage control, high stability",
-        "Multiple output modes to meet different needs",
-        "Intelligent temperature control system, safe and reliable"
-      ]
+        "Plasma ignition, no gas, no oil, no open flame",
+        "Extended handle design for safer ignition",
+        "Double safety switch, anti misoperation",
+        "Visualize the battery level at a glance",
+        "All aluminum metal body, durable and long-lasting"
+      ],
+      "specifications": {
+        "产品尺寸": "157*19*13mm",
+        "产品净重": "59g",
+        "主要材质": "铝合金",
+        "电池容量": "1.1Wh",
+        "充电接口": "Type-c"
+      }
     },
     "MF1": {
-      "name": "Multi-function Measuring Instrument",
+      "name": "Multi Functional Flashlight",
       "description": "Multi-function measuring device, one machine for multiple uses",
       "features": [
-        "Multi-parameter measurement, comprehensive functions",
-        "High-precision sensors, accurate data",
-        "Large screen display, clear and intuitive"
-      ]
+        "7 lighting modes, one click switch",
+        "Large capacity lithium battery, 3.5-hour strong light endurance, 43 hour weak light endurance",
+        "15 ° light source design for easy illumination",
+        "All aluminum alloy shell, sturdy and durable",
+        "Waterproof and dustproof design, worry free outdoors",
+        "Visual battery level reminder",
+        "Strong magnetic force on the back, stable adsorption without falling off"
+      ],
+      "specifications": {
+        "产品尺寸": "131*36.8*23mm",
+        "产品净重": "150.5g",
+        "主要材质": "铝合金",
+        "额定功率": "2W",
+        "流明": "270",
+        "电池容量": "2150mAh",
+        "充电接口": "Type-c"
+      }
     },
     "S1": {
-      "name": "Smart Switch",
+      "name": "Multi Functional Screwdriver",
       "description": "Smart home control switch, remote operation",
       "features": [
-        "Smart networking, remote control",
-        "Timer function, automated operation",
-        "Energy-saving design, reduces power consumption"
-      ]
+        "Integrated design, easy to access",
+        "Strong magnetic adsorption, one box storage",
+        "5 commonly used batch heads, 1 extension rod",
+        "S2 alloy steel batch head, high hardness and good toughness",
+        "Lightweight design, mini and convenient"
+      ],
+      "specifications": {
+        "产品尺寸": "98*33*29mm",
+        "产品净重": "179g",
+        "批头材质": "S2合金钢",
+        "外壳材质": "锌合金、铝合金"
+      }
     },
     "R1": {
-      "name": "Smart Router",
+      "name": "Multi Functional Ratchet",
       "description": "High-speed smart network router, wide coverage",
       "features": [
-        "Wide range coverage, stable signal",
-        "Multi-device connection, high-speed transmission",
-        "Intelligent security protection, data encryption"
-      ]
+        "5 categories, 24 batch heads, to meet various practical needs",
+        "S2 alloy steel batch head, high hardness and good toughness",
+        "40 tooth forward and reverse ratchet structure design, saving 80% effort",
+        "6.2 ° ratchet design, comfortable in small spaces",
+        "Aluminum alloy handle integrated molding, comfortable to the touch"
+      ],
+      "specifications": {
+        "产品尺寸": "98*33*29mm",
+        "产品净重": "179g",
+        "批头材质": "S2合金钢",
+        "手柄材质":"铝合金",
+        "外壳材质": "锌合金、铝合金",
+        "锁定结构":"弹性臂+锁扣"
+      }
     },
     "GF1": {
       "name": "Smart Pet Feeder",
