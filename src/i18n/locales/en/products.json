@@ -30,6 +30,15 @@
     "Ёмкость": "Capacity",
     "Цвет": "Color",
     "Подходит для питомцев": "Suitable for Pets",
+    "产品尺寸": "Product Size",
+    "产品净重": "Product Weight",
+    "主要材质": "Main Material",
+    "温度范围": "Temperature Range",
+    "湿度范围": "Humidity Range",
+    "分辨率": "Resolution",
+    "刷新频率": "Refresh Rate",
+    "电池容量": "Battery Capacity",
+    "充电接口": "Charging Port",
     "values": {
       "178мм * 177мм * 335мм": "178mm * 177mm * 335mm",
       "210мм * 210мм * 142мм": "210mm * 210mm * 142mm",
@@ -95,15 +104,15 @@
         "Multiple usage modes, magnetic suction, adhesive, and standing"
       ],
       "specifications": {
-        "Product Size": "86 * 86 * 13.3mm",
-        "Net Weight of Product": "75g",
-        "Main Material": "ABS",
-        "Temperature Range  ": "-9.9～60℃（14～140°F）",
-        "Humidity Range": "10%～99%RH",
-        "Resolution": "0.1℃ / 1%RH",
-        "Refresh Rate": "60秒 / 次",
-        "Battery Capacity": "450mAh",
-        "Charging Interface": "Type-c"
+        "产品尺寸": "86 * 86 * 13.3mm",
+        "产品净重": "75g",
+        "主要材质": "ABS",
+        "温度范围": "-9.9～60℃（14～140°F）",
+        "湿度范围": "10%～99%RH",
+        "分辨率": "0.1℃ / 1%RH",
+        "刷新频率": "60 seconds / time",
+        "电池容量": "450mAh",
+        "充电接口": "Type-c"
       }
     },
     "LR1": {
