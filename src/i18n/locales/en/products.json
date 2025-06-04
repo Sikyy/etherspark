@@ -28,6 +28,30 @@
     "外壳材质":"Shell Material",
     "手柄材质":"Handle Material",
     "锁定结构":"Locking Structure",
+    "尘盒容量":"Dust Bin Capacity",
+    "最大吸力功率":"Max Suction Power",
+    "充气压力范围":"Inflation Pressure Range",
+    "输入电压":"Input Voltage",
+    "输出电压":"Output Voltage",
+    "功率":"Power",
+    "容量":"Capacity",
+    "覆盖面积":"Coverage",
+    "轮胎":"Tire",
+    "最大承重":"Max Load",
+    "电机":"Motor",
+    "最高时速":"Max Speed",
+    "最大续程里航":"Max Range",
+    "蓝牙版本": "Bluetooth Version",
+    "失真度": "Distortion",
+    "峰值功率": "Peak Power",
+    "频率响应": "Frequency Response",
+    "其他接口": "Other Interfaces",
+    "防水等级": "Waterproof Rating",
+    "信噪比": "Signal to Noise Ratio",
+    "喇叭尺寸": "Driver Diameter",
+    "麦克风": "Microphone",
+    "蓝牙范围": "Bluetooth Range",
+    "蓝牙编解码器": "Bluetooth Codecs",
     "values": {
       "铝合金":"Aluminum alloy",
       "±0.5%，支持校准":"±0.5%，Supports calibration",
@@ -37,7 +61,17 @@
       "S2合金钢":"S2 alloy steel",
       "5档 10000～28000r/min":"5th gear, 10000-28000r/min",
       "锌合金、铝合金":"Zinc Alloy、Aluminum Alloy",
-      "弹性臂+锁扣":"elastic arm+locking buckle"
+      "弹性臂+锁扣":"elastic arm+locking buckle",
+      "铝合金、ABS":"Aluminum alloy、ABS",
+      "3A-6.8A 超级快速充电":"3A-6.8A super fast charging",
+      "A端口100W，C端口25W":"A port 100W, C port 25W",
+      "30立方米/100平方英尺":"30m3/100sqft",
+      "加强型铁车架":"Reinforced iron",
+      "前26', 后20'":"26'front + 20'rear",
+      "TF卡 / AUX音频":"TF card/AUX audio",
+      "USB / TF卡 / AUX音频 / OUT输出 / 乐器孔 / 直播孔":"USB/TF card/AUX audio/OUT output/instrument port/live streaming port",
+      "木、皮革、金属":"wood, leather, metal",
+      "4个麦克风":"4 Mics"
     }
   },
   "features": {
@@ -317,6 +351,63 @@
         "手柄材质":"铝合金",
         "外壳材质": "锌合金、铝合金",
         "锁定结构":"弹性臂+锁扣"
+      }
+    },
+    "VC1": {
+      "name": "Wireless Vacuum Cleaner VC1",
+      "description": "",
+      "features": [
+        "All-aluminium body, wireless design, car and home dual-us",
+        "New high-speed brushless motor, powerful suction power 16000Pa, deep cleaning",
+        "Innovative brush head combinations for easy dusting and easy to clean and remove accessories",
+        "One click ash pouring, quick operation,no dirty hands"
+      ],
+      "specifications": {
+        "产品尺寸": "60*55*290mm",
+        "产品净重": "680g",
+        "主要材质": "铝合金、ABS",
+        "尘盒容量":"170mL",
+        "电池容量": "6000mAh",
+        "最大吸力功率":"16000Pa",
+        "充电接口": "Type-c"
+      }
+    },
+    "AP2": {
+      "name": "Air Pump AP2",
+      "description": "",
+      "features": [
+        "Adopts the third generation of high-performance inflation engine, it only takes about 7 minutes to fill 1 Golf car tyre.Under fully charged condition, inflate 3 205/55 R16 car tyres from 0 bar to 2.5 bar",
+        "High-precision mirror-ground metal cylinder, pressurised from 0psi to 150psi in about 14 seconds, LED lighting, easy to operate at night",
+        "Preset pressure value, accurate filling and stopping automatically",
+        "Automatic altitude correction, equally accurate at different altitudes",
+        "New air duct design, improve cooling efficiency, no need to rest, can work continuously"
+      ],
+      "specifications": {
+        "产品尺寸": "123.5*74*45mm",
+        "产品净重": "450g",
+        "主要材质": "PC",
+        "充气压力范围": "0.2-10.3bar/3-150psi",
+        "电池容量": "2500mAh",
+        "充电接口": "USB Type-c"
+      }
+    },
+    "MC1": {
+      "name": "Multi-function Car Charger MC1",
+      "description": "",
+      "features": [
+        "Fast charging black technology, intelligent chip, stable and fast charging",
+        "Plug and play, full charge for travelling",
+        "USB+Type-C dual port output, end power anxiety",
+        "Hidden design, does not take up space, passenger and cargo universal"
+      ],
+      "specifications": {
+       "产品尺寸": "Ф25*63.5mm",
+        "产品净重": "35g",
+        "主要材质": "铝合金、ABS",
+        "输入电压": "DV12-24V",
+        "输出电压": "3A-6.8A 超级快速充电",
+        "功率": "A端口100W，C端口25W",
+        "充电接口": "USB+Type-c"
       }
     },
     "GF1": {
@@ -662,37 +753,180 @@
         "Battery Capacity": "5200mAh"
       }
     },
-    "sound-1": {
-      "name": "SP1 Sound System",
-      "description": "High-fidelity sound quality, Bluetooth connectivity"
+    "SP1": {
+      "name": "Portable Bluetooth Speaker SP1",
+      "description": "",
+      "features": [
+        "4D drum surround sound effect, TWS interconnection, 0.2S ultra-low latency",
+        "Adopting dual 10W full frequency dual magnetic speakers, the sound penetration is strong, the coverage range is wide, and the tone is rich, full, and powerful",
+        "Three proof design, dual color injection molding process, IPX5",
+        "High energy lithium battery, able to play continuously for 8-12 hours at medium volume"
+      ],
+      "specifications": {
+        "产品尺寸": "170*69*49mm",
+        "产品净重": "418g",
+        "外壳材质": "TPU、ABS",
+        "蓝牙版本": "4.2",
+        "失真度": "≦1%",
+        "峰值功率": "10W*2",
+        "频率响应": "80Hz～20KHz",
+        "电池容量": "3600mAh",
+        "充电接口": "Type-c",
+        "其他接口": "TF卡 / AUX音频",
+        "防水等级": "IPX5"
+      }
     },
-    "sound-2": {
-      "name": "SP2 Portable Speaker",
-      "description": "Compact design, powerful sound, long battery life"
+    "SP2": {
+      "name": "Portable Bluetooth Speaker SP2",
+      "description": "",
+      "features": [
+        "Professional grade tuning, studio grade DSP sound effects, ES dynamic low-frequency enhancement technology",
+        "Fully sealed multiple protection design, new outdoor three proof experience",
+        "Built in high-definition noise cancelling microphone, supports hands-free calling",
+        "TWS interconnection, 0.2S ultra-low latency"
+      ],
+      "specifications": {
+        "产品尺寸": "115*⌀80mm",
+        "产品净重": "355g",
+        "外壳材质": "TPU、ABS",
+        "蓝牙版本": "4.2",
+        "失真度": "≦1%",
+        "峰值功率": "8W*2",
+        "频率响应": "80Hz～18KHz",
+        "电池容量": "2000mAh",
+        "充电接口": "Type-c",
+        "其他接口": "TF卡 / AUX音频",
+        "防水等级": "IPX5"
+      }
     },
-    "sound-3": {
-      "name": "SP3 Wireless Earbuds",
-      "description": "Ergonomic design, noise cancellation, crystal clear sound"
+    "SP3": {
+      "name": "Portable Bluetooth Speaker SP3",
+      "description": "",
+      "features": [
+        "High energy lithium battery, 90% volume can play continuously for 6-9H, SOS outdoor distress function, one click emergency alarm",
+        "Three proof design, dual color injection molding process",
+        "Adopting dual 15W20 core strong magnetic speakers, combined with rubber diaphragm resonance, the cavity produces steady sound",
+        "Using JULI chip, intelligently adjust the frequency of the speaker diaphragm in the high, medium, and low frequency ranges to maintain clear scales"
+      ],
+      "specifications": {
+        "产品尺寸": "196*⌀80mm",
+        "产品净重": "726g",
+        "外壳材质": "TPU、ABS",
+        "蓝牙版本": "4.2",
+        "失真度": "≦1%",
+        "峰值功率": "15W*2",
+        "频率响应": "70Hz～18KHz",
+        "电池容量": "4400mAh",
+        "充电接口": "Type-c",
+        "其他接口": "TF卡 / AUX音频",
+        "防水等级": "IPX5"
+      }
     },
-    "sound-4": {
-      "name": "High-fidelity Floor Speaker",
-      "description": "Outstanding sound quality, powerful bass, classic appearance design"
+    "SM1": {
+      "name": "Microphone Input Bluetooth Speaker SM1",
+      "description": "",
+      "features": [
+        "Dual colorful aperture, 5 stunning lighting effects, high energy lithium battery, continuous playback for 6-8 hours",
+        "Stage level stunning sound, using 2 * 3-inch subwoofers with strong penetration",
+        "Backpack portable design, convenient for outdoor play, diagonal travel easy to take out of the house",
+        "Bluetooth 5.0, fast and stable connection, compatible with 99% of Bluetooth devices"
+      ],
+      "specifications": {
+        "产品尺寸": "328*161*145mm",
+        "产品净重": "2750g",
+        "外壳材质": "ABS",
+        "蓝牙版本": "5.0",
+        "峰值功率": "40W",
+        "信噪比": "≥90db",
+        "电池容量": "4000mAh",
+        "充电接口": "Type-c",
+        "其他接口": "USB / TF卡 / AUX音频 / OUT输出 / 乐器孔 / 直播孔"
+      }
     },
-    "sound-5": {
-      "name": "Desktop Bluetooth Speaker",
-      "description": "Wireless connection, stereo sound effect, stylish appearance"
+    "SM2": {
+      "name": "Microphone Input Bluetooth Speaker SM2",
+      "description": "",
+      "features": [
+        "Classical aesthetic exterior design, perfect combination of wood and leather",
+        "Metal tuning buttons for discs, smooth and detailed tuning, brushed metal operating panel, elegant texture",
+        "Tri-frequency speakers, stunning sound, design of Independent Adjustment Function for High and Medium Bass",
+        "HiFi level sound effects, support for more device access"
+      ],
+      "specifications": {
+        "产品尺寸": "412*303*226mm",
+        "产品净重": "11.02Kg",
+        "外壳材质": "木、皮革、金属",
+        "蓝牙版本": "5.0",
+        "峰值功率": "150W",
+        "信噪比": "≥90db",
+        "电池容量": "10000mAh",
+        "充电接口": "DC 28V",
+        "其他接口": "USB / TF卡 / AUX音频 / OUT输出 / 乐器孔 / 直播孔"
+      }
     },
-    "sound-6": {
-      "name": "Gaming Headset",
-      "description": "Immersive sound effects, comfortable for long-term wear, clear microphone"
+    "EH1": {
+      "name": "Bluetooth Headphone EH1",
+      "description": "",
+      "features": [
+        "Hybrid active noise canceling ±35db, up to 70 hours of talk time on a single charge",
+        "40mm dynamic driver provides you premium audio quality",
+        "With LDAC decoding format, support for HiRes double gold standard authentication",
+        "Spatial Audio, support dual-device connection",
+        "4 built-in ANC microphones, support ENC for clear calls"
+      ],
+      "specifications": {
+        "喇叭尺寸": "40mm",
+        "频率响应": "20Hz～20KHz",
+        "麦克风": "4个麦克风",
+        "蓝牙版本": "5.4",
+        "蓝牙范围": "15M",
+        "蓝牙编解码器": "LDAC/SBC/AAC",
+        "电池容量": "600mAh",
+        "充电接口": "Type-c"
+      }
     },
-    "sound-7": {
-      "name": "Smart Speaker",
-      "description": "Voice control, smart assistant functions, quality sound"
+    "EH2": {
+      "name": "Bluetooth Headphone EH2",
+      "description": "",
+      "features": [
+        "Hybrid active noise canceling ±40db, up to 80 hours of talk time on a single charge",
+        "40mm dynamic driver provides you premium audio quality",
+        "With LDAC decoding format, support for HiRes double gold standard authentication",
+        "Spatial Audio, support dual-device connection",
+        "4 built-in ANC microphones, support ENC for clear calls"
+      ],
+      "specifications": {
+        "喇叭尺寸": "40mm",
+        "频率响应": "20Hz～20KHz",
+        "麦克风": "4个麦克风",
+        "蓝牙版本": "5.4",
+        "蓝牙范围": "15M",
+        "蓝牙编解码器": "LDAC/SBC/AAC",
+        "电池容量": "600mAh",
+        "充电接口": "Type-c"
+      }
     },
-    "sound-8": {
-      "name": "Professional Recording Microphone",
-      "description": "High-sensitivity pickup, low noise, professional recording quality"
+    "EG1": {
+      "name": "Neck Wear Bluetooth Earphone EG1",
+      "description": "",
+      "features": [
+        "Ultra low efficiency, ultra long standby time",
+        "ENC intelligent call noise reduction, filtering environmental noise, clear communication",
+        "High dynamic and large dynamic coil unit, independent metal bass tube structure",
+        "SBC+AAC audio decoding",
+        "Single ear force less than 3g, comfortable to wear without sensation",
+        "Design of Rhythmic Breathing Lamp"
+      ],
+      "specifications": {
+        "喇叭尺寸": "10mm",
+        "频率响应": "20Hz～20KHz",
+        "蓝牙版本": "5.3",
+        "蓝牙范围": "≥10M",
+        "蓝牙编解码器": "SBC/AAC",
+        "电池容量": "300mAh",
+        "充电接口": "Type-c",
+        "防水等级": "IPX5"
+      }
     },
     "life-1": {
       "name": "Smart Air Conditioner",
@@ -760,39 +994,104 @@
     },
     "watch-1": {
       "name": "WB1 Smart Watch",
-      "description": "Health monitoring, sports tracking, long battery life"
+      "description": "Health monitoring, sports tracking, long battery life",
+       "features": [
+        "AMOLED display screen, supporting 2.5D interactive animation",
+        "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
+        "Multiple functional support,Bluetooth calling function,AOD function,Cover screen off function,Gesture wake-up function,Ringtone selection function,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder,Weather, music control, calendar, calculator, games and other applications",
+        "Battery life exceeding 7 days"
+      ]
+   },
+    "watch-2": {
+      "name": "WM1 Mechanical Smart Watch",
+      "description": "Accurate heart rate monitoring, sleep tracking, water resistant",
+       "features": [
+        "High definition AMOLED display screen with finer colors，Mechanical watch design style, more robust",
+        "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
+        "Multiple functional support,Bluetooth calling function,AOD function,Cover screen off function,Gesture wake-up function,Ringtone selection function,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder,Weather, music control, calendar, calculator, games and other applications",
+        "Battery life exceeding 8 days"
+      ]
     },
     "watch-3": {
-      "name": "WF1 Fitness Tracker",
-      "description": "Accurate heart rate monitoring, sleep tracking, water resistant"
+      "name": "WF1 Smart Watch",
+      "description": "Accurate heart rate monitoring, sleep tracking, water resistant",
+       "features": [
+        "Curved AMOLED display screen for smoother interactive operation",
+        "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
+        "Multiple functional support,Bluetooth calling function,AOD function,Cover screen off function,Gesture wake-up function,Ringtone selection function,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder,Weather, music control, calendar, calculator, games and other applications",
+        "Battery life exceeding 7 days"
+      ]
     },
     "watch-4": {
-      "name": "Business Smart Watch",
-      "description": "Classic design, smart notifications, long-lasting battery"
+      "name": "WF2 Smart Watch",
+      "description": "Classic design, smart notifications, long-lasting battery",
+       "features": [
+        "High definition AMOLED display screen, PPI up to 322, supports 24 bit color display，The screen swipe refresh rate can reach 60FPS, and every interaction operation is smooth and seamless",
+        "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
+        "Multiple functional support,Bluetooth calling function,AOD function,Cover screen off function,Gesture wake-up function,Ringtone selection function,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder,Weather, music control, calendar, calculator, games and other applications",
+        "Battery life exceeding 10 days"
+      ]
     },
     "watch-5": {
-      "name": "Sports Smart Watch",
-      "description": "Multiple sport modes, GPS positioning, heart rate monitoring"
+      "name": "WS1 Sports Smart Watch",
+      "description": "Multiple sport modes, GPS positioning, heart rate monitoring",
+       "features": [
+        "Rotating crown design with vibration feedback brings a richer experience to operation，Excellent waterproof rating, fearless of outdoor activities",
+        "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
+        "Multiple functional support,Bluetooth calling function,AOD function,Cover screen off function,Gesture wake-up function,Ringtone selection function,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder,Weather, music control, calendar, calculator, games and other applications",
+        "Battery life exceeding 5 days"
+      ]
     },
     "watch-6": {
-      "name": "Fashion Smart Watch",
-      "description": "Slim design, health monitoring, personalized watch faces"
+      "name": "BB1 Sports Wristband",
+      "description": "Slim design, health monitoring, personalized watch faces",
+       "features": [
+        "1.57” color screen, full touch screen operation without buttons",
+        "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
+        "Multiple functional support,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder",
+        "Battery life exceeding 5 days"
+      ]
     },
-    "scooter-1": {
-      "name": "Electric Food Blender",
-      "description": "High-speed motor, multi-function attachments, easy to clean"
+    "S2": {
+      "name": "Electric Scooter S2",
+      "description": "",
+      "features": [
+        "Full aluminium alloy body, lithium-ion battery, lightweight and high strength, with good durability and corrosion resistance",
+        "Newly upgraded electronic control algorithm, precisely regulate the power output, power in place, climbing with strength. 500w motor maximum speed of 30km/h, maximum climbing angle of up to 15°",
+        "New upgraded design, easy to fold in just 3 seconds, portable for travelling, front and rear damping system, efficient shock absorption and smooth out bumps"
+      ],
+      "specifications": {
+        "产品尺寸": "116.7*47.2*120.3cm",
+        "产品净重": "23kg",
+        "主要材质": "铝合金",
+        "电池容量": "10.4Ah",
+        "轮胎": "10'",
+        "最大承重": "120kg",
+        "电机": "500W",
+        "最高时速": "30km/h",
+        "最大续程里航": "40km"
+      }
     },
-    "scooter-2": {
-      "name": "High-Speed Blender",
-      "description": "Powerful motor, multi-function mixing, intelligent program control"
-    },
-    "scooter-3": {
-      "name": "Electric Scooter - Light Version",
-      "description": "Lightweight design, portable folding, suitable for short commutes"
-    },
-    "scooter-4": {
-      "name": "Electric Scooter - Off-road Version",
-      "description": "Powerful drive, large wheel design, adapts to various road conditions"
+    "A2": {
+      "name": "Alien Scooter A2",
+      "description": "",
+      "features": [
+       "Highly recognisable design, subverting the conventional visual symbols, large front wheels are as solid as a rock, small rear wheels are as agile as a blade",
+        "Suitable for all kinds of complex road conditions and commuting scenarios，colours can be customised",
+        "LCD screen, push button operation, three speeds adjustable",
+        "Dual shock absorbers, oil disc brakes, off-road tyres, lithium-ion battery，ensuring safe travel"
+      ],
+      "specifications": {
+        "产品尺寸": "205*63.5*123cm",
+        "产品净重": "35.9kg",
+        "主要材质": "加强型铁车架",
+        "电池容量": "20Ah",
+        "轮胎": "前26', 后20'",
+        "最大承重": "125kg",
+        "电机": "750W",
+        "最高时速": "40km/h",
+        "最大续程里航": "100km"
+      }
     },
     "news-1": {
       "name": "New Smart Watch",
@@ -813,6 +1112,25 @@
     "news-5": {
       "name": "Portable Bluetooth Speaker",
       "description": "Compact design, powerful sound effects, waterproof function"
+    },
+    "SDM2": {
+      "name": "Scent Diffuser Machine SDM2",
+      "description": "",
+      "features": [
+        "Fast diffusion lasting freshness, vehicle/home fragrance diffuser",
+        "Imported aviation aluminum, two fluid atomization system, 60 hours long battery life on a single charge",
+        "Intelligent control，automatic sensor stop and start, automatically turn on the aroma when you get in the car, no need to manually switch",
+        "Small and portable, 360°around fragrance, elegant and not pungent, natural essential oils, more fragrance-diffusing",
+        "Highly sensitive touch buttons, easy to operate, 3 work models, 3 gear timing"
+      ],
+      "specifications": {
+        "产品尺寸": "Ф63*145mm",
+        "产品净重": "290g",
+        "主要材质": "铝合金",
+        "容量": "10mL",
+        "覆盖面积": "30立方米/100平方英尺",
+        "充电接口": "Type-c"
+      }
     },
     "invehicle-1": {
       "name": "Car Air Purifier",

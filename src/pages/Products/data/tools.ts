@@ -514,5 +514,122 @@ export const toolsProducts: Product[] = [
         "外壳材质": "锌合金、铝合金",
         "锁定结构":"弹性臂+锁扣"
       }
-  }
+  },
+  {
+    id: 'VC1',
+    numericId: 213,
+    name: '无线吸尘器 VC1',
+    description: '',
+    price: '7,299₽',
+    image: '/images/tools/scene/VC1/VC1-main.png',
+    cardImage: '/images/tools/VC1.png',
+    gallery: [
+      {
+        src: '/images/tools/scene/VC1/VC1场景图1.png',
+      },
+      {
+        src: '/images/tools/scene/VC1/VC1场景图2.png',
+      },
+      {
+        src: '/images/tools/scene/VC1/VC1场景图3.png',
+      },
+      {
+        src: '/images/tools/scene/VC1/VC1场景图4.png',
+      }
+    ],
+    features: [
+        "全铝一体化机身，无线设计，家车两用",
+        "新型高速无刷电机，强大吸力16000Pa，深度清洁",
+        "创新刷头组合，轻松除尘无死角，配件易于清洁和拆卸",
+        "一键倒灰，操作快捷，不脏手"
+      ],
+    specifications: {
+        "产品尺寸": "60*55*290mm",
+        "产品净重": "680g",
+        "主要材质": "铝合金、ABS",
+        "尘盒容量": "170mL",
+        "电池容量": "6000mAh",
+        "最大吸力功率": "16000Pa",
+        "充电接口": "Type-c"
+      }
+  },
+  {
+    id: 'AP2',
+    numericId: 214,
+    name: '充气泵 AP2',
+    description: '',
+    price: '6,999₽',
+    image: '/images/tools/scene/AP2/AP2-main.png',
+    cardImage: '/images/tools/AP2.png',
+    gallery: [
+      {
+        src: '/images/tools/scene/AP2/AP2场景图1.png',
+      },
+      {
+        src: '/images/tools/scene/AP2/AP2场景图2.png',
+      },
+      {
+        src: '/images/tools/scene/AP2/AP2场景图3.png',
+      },
+      {
+        src: '/images/tools/scene/AP2/AP2场景图4.png',
+      },
+      {
+        src: '/images/tools/scene/AP2/AP2场景图5.png',
+      }
+    ],
+    features: [
+        "采用第三代高性能充气引擎，充满1条高尔夫汽车轮胎仅需约7分钟，满电状态下，可将3条205/55 R16汽车轮胎从0bar充至2.5bar",
+        "高精度镜面研磨金属缸体加持，从0psi加压至150psi约14秒，LED照明，夜间自如操作",
+        "预设压力值，精准充好自动停",
+        "自动海拔校正，不同海拔同样精准",
+        "全新的风道设计，提高散热效率，无需休息，可持续工作"
+      ],
+    specifications: {
+        "产品尺寸": "123.5*74*45mm",
+        "产品净重": "450g",
+        "主要材质": "PC",
+        "充气压力范围": "0.2-10.3bar/3-150psi",
+        "电池容量": "2500mAh",
+        "充电接口": "USB Type-c"
+      }
+  },
+  {
+    id: 'MC1',
+    numericId: 215,
+    name: '多功能车充头 MC1',
+    description: '',
+    price: '699₽',
+    image: '/images/tools/scene/MC1/MC1-main.png',
+    cardImage: '/images/tools/MC1.png',
+    gallery: [
+      {
+        src: '/images/tools/scene/MC1/MC1场景图1.png',
+      },
+      {
+        src: '/images/tools/scene/MC1/MC1场景图2.png',
+      },
+      {
+        src: '/images/tools/scene/MC1/MC1场景图3.png',
+      },
+      {
+        src: '/images/tools/scene/MC1/MC1场景图4.png',
+      }
+    ],
+    features: [
+        "快充黑科技，智能芯片，稳定快充",
+        "即插即用，满电出行",
+        "USB+Type-C双口输出，终结电量焦虑",
+        "隐藏式设计，不占空间，客货通用"
+      ],
+    specifications: {
+        "产品尺寸": "Ф25*63.5mm",
+        "产品净重": "35g",
+        "主要材质": "铝合金、ABS",
+        "输入电压": "DV12-24V",
+        "输出电压": "3A-6.8A 超级快速充电",
+        "功率": "A端口100W，C端口25W",
+        "充电接口": "USB+Type-c"
+      }
+  },
 ]; 

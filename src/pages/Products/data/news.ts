@@ -153,5 +153,47 @@ export const newsProducts: Product[] = [
     price: '¥5,999',
     image: 'https://via.placeholder.com/400x300/333/fff?text=全自动咖啡机',
     cardImage: '/images/products/8.png'
+  },
+  {
+    id: 'SDM2',
+    numericId: 106,
+    name: '香薰机 SDM2',
+    description: '',
+    price: '8,299₽',
+    image: '/images/news/scene/SDM2/SDM2-main.png',
+    cardImage: '/images/news/SDM2.png',
+    tag: '新品',
+    gallery: [
+      {
+        src: '/images/news/scene/SDM2/SDM2场景图1.png',
+      },
+      {
+        src: '/images/news/scene/SDM2/SDM2场景图2.png',
+      },
+      {
+        src: '/images/news/scene/SDM2/SDM2场景图3.png',
+      },
+      {
+        src: '/images/news/scene/SDM2/SDM2场景图4.png',
+      },
+      {
+        src: '/images/news/scene/SDM2/SDM2场景图5.png',
+      }
+    ],
+    features: [
+      "快速扩散，持久清新，车载/家用香氛机",
+      "进口航空铝材，双流体雾化系统，单次充电续航时间长达60小时",
+      "智能控制，自动感应停止和启动，上车后自动开启香气，无需手动开关",
+      "小巧便携，360°全方位扩香，优雅不刺鼻，天然精油，扩香更持久",
+      "高灵敏度触摸按钮，操作简便，3种工作模式，3种档位定时"
+    ],
+    specifications: {
+      "产品尺寸": "Ф63*145mm",
+      "产品净重": "290g",
+      "主要材质": "铝合金",
+      "容量": "10mL",
+      "覆盖面积": "30立方米/100平方英尺",
+      "充电接口": "Type-c"
+    }
   }
 ]; 
