@@ -9,10 +9,9 @@ export const petProducts: Product[] = [
     price: '7,199₽',
     image: '/images/pet/scene/GF1/宠物喂食器主图.jpg',
     cardImage: '/images/pet/GF1.png',
-    tag: '新品',
     gallery: [
       {
-        src: '/images/pet/scene/GF1/宠物喂食器场景图1.jpg',
+        src: '/images/pet/scene/GF1/宠物喂食器场景图5.jpg',
       },
       {
         src: '/images/pet/scene/GF1/宠物喂食器场景图2.jpg',
@@ -22,26 +21,22 @@ export const petProducts: Product[] = [
       },
       {
         src: '/images/pet/scene/GF1/宠物喂食器场景图4.jpg',
-      },
-      {
-        src: '/images/pet/scene/GF1/宠物喂食器场景图5.jpg',
       }
     ],
-    "features": [
-        "4L可视化大容量储粮仓设计，短期出行不再担忧爱宠饮食",
-        "加厚密封盖设计，减少空气进入，减缓食物氧化变质",
-        "内置干燥剂设计，防潮除湿，吸收筒内水分",
-        "密闭式出口设计，叶轮出粮后复位，进一步加强锁鲜效果",
-        "双供电系统，无惧家中断电"
+     "features": [
+        "WiFi连接，通过应用程序远程控制",
+        "一键喂食，喂食计划，缺粮提醒",
+        "可拆卸和可清洗设计",
+        "所有材料均为食品级"
       ],
-    specifications: {
-        "产品尺寸": "335*330*177mm",
-        "产品净重": "1310g",
-        "主要材质": "ABS、PC、SUS304",
-        "容量": "4L",
-        "工作电压": "5V 1A",
-        "连接方式": "WiFi（2.4GHz）"
-      }
+        specifications: {
+        '尺寸': '178mm * 177mm * 335mm',
+        '重量': '1761g',
+        '容量': '4L',
+        '颜色': '白色',
+        '材质': 'ABS + SUS304',
+        '适用宠物类型': '猫咪以及小型和中型犬'
+        }
   },
   {
     id: 'GW1',
@@ -54,38 +49,30 @@ export const petProducts: Product[] = [
     gallery: [
       {
         src: '/images/pet/scene/GW1/1.jpg',
-        alt: '智能家居控制中心-正面视图',
-        caption: '简约现代的设计，触摸屏控制面板'
       },
       {
         src: '/images/pet/scene/GW1/2.jpg',
-        alt: '智能家居控制中心-侧面视图',
-        caption: '超薄机身设计，易于安装在墙面'
       },
       {
         src: '/images/pet/scene/GW1/3.jpg',
-        alt: '智能家居控制中心-背面视图',
-        caption: '多接口设计，支持各类智能设备连接'
       },
       {
         src: '/images/pet/scene/GW1/4.jpg',
-        alt: '智能家居控制中心-使用场景',
-        caption: '一键控制全屋智能设备，提升生活品质'
       }
     ],
     features: [
-      'Автоматическое отключение при отсутствии воды, бесшумный насос',
-      'Питание: USB-зарядка и аккумулятор (4000 мАч)',
-      'Лёгкость разборки и очистки',
-      '3 режима работы: индукционный, таймерный и непрерывный',
+        "无水自动关闭，静音泵",
+        "电源：USB充电和电池（4000毫安时）",
+        "易于拆卸和清洁",
+        "3种工作模式：感应，定时和连续"
     ],
     specifications: {
-      'Размер': '210мм * 210мм * 142мм',
-      'Вес': '650г',
-      'Ёмкость': '3,2л',
-      'Цвет': 'Белый',
-      'Материал': 'ABS',
-      'Подходит для питомцев': 'кошек, а также мелких и средних собак',
+        "尺寸": "210mm * 210mm * 142mm",
+        "重量": "650g",
+        "容量": "3.2L",
+        "颜色": "白色",
+        "材质": "ABS",
+        "适用宠物类型": "猫咪以及小型和中型犬"
     }
   },
   {
@@ -94,8 +81,32 @@ export const petProducts: Product[] = [
     name: 'PD1',
     description: 'Низкошумное сушильное устройство для домашних животных',
     price: '35,999₽',
-    image: '/images/pet/scene/PD1/PD1_main.jpg',
+    image: '/images/pet/scene/PD1/PD1主图.jpg',
     cardImage: '/images/pet/PD1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/PD1/PD1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/PD1/PD1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/PD1/PD1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "温和烘干技术，不伤害宠物毛发",
+        "超低噪音设计，减少宠物紧张",
+        "多温度设置，适合不同宠物需求"
+      ],
+        specifications: {
+       '尺寸': '450mm * 350mm * 500mm',
+        '重量': '5800g',
+        "额定功率": "1200W",
+        "颜色": "白色",
+        "材质": "ABS + 不锈钢",
+        "温度范围": "30-70°C"
+        }
   },
   {
     id: 'CT1',
@@ -103,8 +114,32 @@ export const petProducts: Product[] = [
     name: 'CT1',
     description: 'Умный автоматический очищающийся лоток для кошек',
     price: '34,999₽',
-    image: '/images/pet/scene/CT1/CT1_main.jpg',
+    image: '/images/pet/scene/CT1/CT1主图.jpg',
     cardImage: '/images/pet/CT1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/CT1/CT1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/CT1/CT1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/CT1/CT1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "自动清洁系统，省时省力",
+        "有效除臭设计，保持室内空气清新",
+        "智能感应技术，识别猫咪使用情况"
+      ],
+        specifications: {
+        "尺寸": "520mm * 480mm * 420mm",
+        "重量": "4500g",
+        "电源": "220V/50Hz",
+        "容量": "5L",
+        "颜色": "灰色",
+        "材质": "ABS + PP"
+        }
   },
   {
     id: 'NM1',
@@ -139,8 +174,31 @@ export const petProducts: Product[] = [
     name: 'GC1',
     description: 'Эффективный инструмент для удаления шерсти питомцев',
     price: '699₽',
-    image: '/images/pet/scene/GC1/GC1_main.jpg',
+    image: '/images/pet/scene/GC1/GC1主图.jpg',
     cardImage: '/images/pet/GC1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/GC1/GC1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/GC1/GC1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/GC1/GC1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "人体工学设计，使用舒适",
+        "有效去除浮毛和打结",
+        "适合各种类型的宠物毛发"
+      ],
+        specifications: {
+        "尺寸": "170mm * 85mm * 30mm",
+        "重量": "85g",
+        "材质": "PP + 不锈钢针齿",
+        "颜色": "绿色",
+        "适用宠物类型": "短毛和长毛宠物"
+        }
   },
   {
     id: 'NC1',
@@ -148,8 +206,31 @@ export const petProducts: Product[] = [
     name: 'NC1',
     description: 'Безопасный и эффективный инструмент для стрижки когтей питомцев',
     price: '299₽',
-    image: '/images/pet/scene/NC1/NC1_main.jpg',
+    image: '/images/pet/scene/NC1/NC1主图.jpg',
     cardImage: '/images/pet/NC1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/NC1/NC1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/NC1/NC1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/NC1/NC1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "精准剪切，避免伤害",
+        "防滑手柄，操作稳定",
+        "适合各种大小的宠物"
+      ],
+        specifications: {
+        "尺寸": "140mm* 55mm *15mm",
+        "重量": "75g",
+        "材质": "不锈钢 + 橡胶手柄",
+        "颜色": "银色/绿色",
+        "适用宠物类型": "猫咪和犬类"
+        }
   },
   {
     id: 'DH1',
@@ -157,8 +238,31 @@ export const petProducts: Product[] = [
     name: 'DH1',
     description: 'Удобное и безопасное устройство для выгула питомцев',
     price: '2,499₽',
-    image: '/images/pet/scene/DH1/DH1_main.jpg',
+    image: '/images/pet/scene/DH1/DH1主图.jpg',
     cardImage: '/images/pet/DH1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/DH1/DH1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/DH1/DH1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/DH1/DH1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "透气材料，佩戴舒适",
+        "可调节尺寸，适合不同体型",
+        "反光设计，夜间安全"
+      ],
+        specifications: {
+        "尺寸": "可调节，适合胸围20-60cm",
+        "重量": "120g",
+        "材质": "尼龙 + 网眼布",
+        "颜色": "绿色",
+        "适用宠物类型": "小型至中型犬"
+        }
   },
   {
     id: 'TR1',
@@ -166,8 +270,32 @@ export const petProducts: Product[] = [
     name: 'TR1',
     description: 'Высококачественный поводок для выгула питомцев',
     price: '1,999₽',
-    image: '/images/pet/scene/TR1/TR1_main.jpg',
+    image: '/images/pet/scene/TR1/TR1主图.jpg',
     cardImage: '/images/pet/TR1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/TR1/TR1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/TR1/TR1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/TR1/TR1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "耐用材质，承受拉力强",
+        "合理长度，控制得当",
+        "舒适手柄，长时间使用不疲劳"
+      ],
+        specifications: {
+        "长度": "1.5m（可伸缩至3m）",
+        "重量": "250g",
+        "材质": "尼龙 + ABS",
+        "承重": "50kg",
+        "颜色": "绿色",
+        "适用宠物类型": "小型至中型犬"
+        }
   },
   {
     id: 'GB1',
@@ -175,8 +303,32 @@ export const petProducts: Product[] = [
     name: 'GB1',
     description: 'Портативный дозатор пакетов для уборки за питомцами',
     price: '349₽',
-    image: '/images/pet/scene/GB1/GB1_main.jpg',
+    image: '/images/pet/scene/GB1/GB1主图.jpg',
     cardImage: '/images/pet/GB1.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/GB1/GB1场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/GB1/GB1场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/GB1/GB1场景图3.jpg',
+      },
+      ],
+     "features": [
+        "便携设计，易于携带",
+        "大容量，减少更换频率",
+        "防水材质，适合各种天气"
+      ],
+        specifications: {
+        "尺寸": "85mm  * 45mm  * 45mm ",
+        "重量": "60g",
+        "容量": "可装15个袋子",
+        "材质": "ABS + 硅胶",
+        "颜色": "绿色",
+        "适用场景": "户外遛宠物"
+        }
   },
   {
     id: 'Snail Car',
@@ -184,7 +336,30 @@ export const petProducts: Product[] = [
     name: 'Snail Car',
     description: 'Веселая интерактивная игрушка для домашних животных',
     price: '1,999₽',
-    image: '/images/pet/scene/Snail_Car/Snail_Car_main.jpg',
+    image: '/images/pet/scene/Snail_Car/蜗牛跑跑车主图.jpg',
     cardImage: '/images/pet/Snail_Car.png',
+    gallery: [
+      {
+        src: '/images/pet/scene/Snail_Car/蜗牛跑跑车场景图1.jpg',
+      },
+      {
+        src: '/images/pet/scene/Snail_Car/蜗牛跑跑车场景图2.jpg',
+      },
+      {
+        src: '/images/pet/scene/Snail_Car/蜗牛跑跑车场景图3.jpg',
+      },
+      ],
+     "features": [
+        "安全材料，无毒无害",
+        "有趣设计，增加互动乐趣",
+        "耐咬耐用，经久耐玩"
+      ],
+        specifications: {
+        "尺寸": "120mm * 80mm  * 60mm ",
+        "重量": "150g",
+        "材质": "TPR环保材料",
+        "颜色": "多彩",
+        "适用宠物类型": "小型犬和猫"
+        }
   }
 ]; 
