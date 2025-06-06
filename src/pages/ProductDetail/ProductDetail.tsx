@@ -276,8 +276,10 @@ const ProductDetail: React.FC = () => {
               </ProductSubTitle>
             )}
             <ProductModel>{t('common:brandName')} {product.model}</ProductModel>
-            <ProductPrice>{product.price}</ProductPrice>
-            <BuyButton>{t('buy', { ns: 'products' })}</BuyButton>
+            <ProductPrice data-price-label={`${t('products.price', { ns: 'common' })}: `}>
+              {product.price}
+            </ProductPrice>
+            <BuyButton>{t('products.buy', { ns: 'common' })}</BuyButton>
           </ProductInfo>
         </ProductSection>
 

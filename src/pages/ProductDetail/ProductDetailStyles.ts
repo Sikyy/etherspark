@@ -95,7 +95,7 @@ export const ProductPrice = styled.div`
   align-items: center;
   
   &:before {
-    content: 'цена: ';
+    content: attr(data-price-label);
     color: #888;
     font-size: 16px;
     margin-right: 10px;

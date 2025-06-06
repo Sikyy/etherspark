@@ -38,7 +38,8 @@
     "notFound": "Product Not Found",
     "category": {
       "notFound": "No products found in this category"
-    }
+    },
+    "price": "Price"
   },
 
   "about": {

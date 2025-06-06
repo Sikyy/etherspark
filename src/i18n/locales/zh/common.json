@@ -38,7 +38,8 @@
     "notFound": "产品未找到",
     "category": {
       "notFound": "该分类下暂无产品"
-    }
+    },
+    "price": "价格"
   },
 
   "about": {
