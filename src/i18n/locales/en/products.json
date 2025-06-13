@@ -69,6 +69,8 @@
     "电源":"Power",
     "长度":"Length",
     "承重":"Load-bearing",
+    "工作时间":"Working hours",
+    "充电时间":"Charging duration",
     "values": {
       "铝合金":"Aluminum alloy",
       "±0.5%，支持校准":"±0.5%，Supports calibration",
