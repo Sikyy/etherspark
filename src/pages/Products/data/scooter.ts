@@ -6,7 +6,7 @@ export const scooterProducts: Product[] = [
     numericId: 301,
     name: '电动滑板车 S2',
     description: '',
-    price: '69,999₽',
+    price: '64,999₽',
     image: '/images/scooter/scene/S2/S2-main.png',
     cardImage: '/images/scooter/S2.png',
     gallery: [
@@ -42,7 +42,7 @@ export const scooterProducts: Product[] = [
     numericId: 302,
     name: '异形滑板车 A2',
     description: '',
-    price: '167,999₽',
+    price: '134,999₽',
     image: '/images/scooter/scene/A2/A2备.png',
     cardImage: '/images/scooter/A2.png',
     gallery: [

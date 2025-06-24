@@ -520,7 +520,7 @@ export const toolsProducts: Product[] = [
     numericId: 213,
     name: '无线吸尘器 VC1',
     description: '',
-    price: '7,299₽',
+    price: '4,299₽',
     image: '/images/tools/scene/VC1/VC1-main.png',
     cardImage: '/images/tools/VC1.png',
     gallery: [
@@ -558,7 +558,7 @@ export const toolsProducts: Product[] = [
     numericId: 214,
     name: '充气泵 AP2',
     description: '',
-    price: '6,999₽',
+    price: '5,699₽',
     image: '/images/tools/scene/AP2/AP2-main.png',
     cardImage: '/images/tools/AP2.png',
     gallery: [
@@ -599,7 +599,7 @@ export const toolsProducts: Product[] = [
     numericId: 215,
     name: '多功能车充头 MC1',
     description: '',
-    price: '699₽',
+    price: '499₽',
     image: '/images/tools/scene/MC1/MC1-main.png',
     cardImage: '/images/tools/MC1.png',
     gallery: [

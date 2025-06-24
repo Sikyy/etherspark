@@ -159,7 +159,7 @@ export const newsProducts: Product[] = [
     numericId: 106,
     name: '香薰机 SDM2',
     description: '',
-    price: '8,299₽',
+    price: '6,299₽',
     image: '/images/news/scene/SDM2/SDM2-main.png',
     cardImage: '/images/news/SDM2.png',
     tag: '新品',
