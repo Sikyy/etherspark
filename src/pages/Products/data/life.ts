@@ -2,7 +2,7 @@ import { Product } from './types';
 
 export const lifeProducts: Product[] = [
   {
-    id: 'life-1',
+    id: 'MA1',
     numericId: 401,
     name: 'MA1',
     description: '变频节能，远程控制，空气净化功能',
@@ -56,7 +56,7 @@ export const lifeProducts: Product[] = [
     }
   },
   {
-    id: 'life-2',
+    id: 'MD1',
     numericId: 402,
     name: 'MD1',
     description: '自动感应，定时控制，静音电机',
@@ -65,7 +65,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/MD1.png'
   },
   {
-    id: 'life-3',
+    id: 'MS1',
     numericId: 403,
     name: 'MS1',
     description: '多种解锁方式，防盗报警，远程控制',
@@ -74,7 +74,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/MS1.png'
   },
   {
-    id: 'life-4',
+    id: 'BD1',
     numericId: 404,
     name: 'BD1',
     description: '激光导航，深度清洁，自动回充',
@@ -83,7 +83,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/BD1.png'
   },
   {
-    id: 'life-5',
+    id: 'BS1',
     numericId: 405,
     name: 'BS1',
     description: '激光导航，深度清洁，自动回充',
@@ -92,7 +92,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/BS1.png'
   },
   {
-    id: 'life-6',
+    id: 'BS2',
     numericId: 406,
     name: 'BS2',
     description: '激光导航，深度清洁，自动回充',
@@ -101,7 +101,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/BS2.png'
   },
   {
-    id: 'life-7',
+    id: 'BC1',
     numericId: 407,
     name: 'BC1',
     description: '激光导航，深度清洁，自动回充',
@@ -110,7 +110,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/BC1.png'
   },
   {
-    id: 'life-8',
+    id: 'BT1',
     numericId: 408,
     name: 'BT1',
     description: '激光导航，深度清洁，自动回充',
@@ -119,7 +119,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/BT1.png'
   },
   {
-    id: 'life-9',
+    id: 'RI1',
     numericId: 409,
     name: 'RI1',
     description: '激光导航，深度清洁，自动回充',
@@ -128,7 +128,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/RI1.png'
   },
   {
-    id: 'life-10',
+    id: 'RC1',
     numericId: 410,
     name: 'RC1',
     description: '激光导航，深度清洁，自动回充',
@@ -137,7 +137,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/RC1.png'
   },
   {
-    id: 'life-11',
+    id: 'RS1',
     numericId: 411,
     name: 'RS1',
     description: '激光导航，深度清洁，自动回充',
@@ -146,7 +146,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/RS1.png'
   },
   {
-    id: 'life-12',
+    id: 'Life-S1',
     numericId: 412,
     name: 'S1',
     description: '激光导航，深度清洁，自动回充',
@@ -155,7 +155,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/S1.png'
   },
   {
-    id: 'life-13',
+    id: 'E1',
     numericId: 413,
     name: 'E1',
     description: '激光导航，深度清洁，自动回充',
@@ -164,7 +164,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/E1.png'
   },
   {
-    id: 'life-14',
+    id: 'P1',
     numericId: 414,
     name: 'P1',
     description: '激光导航，深度清洁，自动回充',
@@ -173,7 +173,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/P1.png'
   },
   {
-    id: 'life-15',
+    id: 'Life-R1',
     numericId: 415,
     name: 'R1',
     description: '激光导航，深度清洁，自动回充',
@@ -182,7 +182,7 @@ export const lifeProducts: Product[] = [
     cardImage: '/images/life/R1.png'
   },
   {
-    id: 'life-16',
+    id: 'OI1',
     numericId: 416,
     name: 'OI1',
     description: '激光导航，深度清洁，自动回充',

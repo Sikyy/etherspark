@@ -41,9 +41,9 @@ const Header: React.FC = () => {
           {/* <NavItem>
             <Link to="/products">{t('nav.products') || '产品展示'}</Link>
           </NavItem> */}
-          <NavItem>
+          {/* <NavItem>
             <Link to="/news">{t('nav.news')}</Link>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <Link to="/tools">{t('nav.tools')}</Link>
           </NavItem>
@@ -73,12 +73,12 @@ const Header: React.FC = () => {
 
         {mobileMenuOpen && (
           <MobileMenu>
-            <NavItem>
+            {/* <NavItem>
               <Link to="/products">{t('nav.products') || '产品展示'}</Link>
-            </NavItem>
-            <NavItem>
+            </NavItem> */}
+            {/* <NavItem>
               <Link to="/news">{t('nav.news')}</Link>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <Link to="/tools">{t('nav.tools')}</Link>
             </NavItem>

@@ -198,7 +198,7 @@ export const ProductsGrid = styled.div`
 
 export const NewsletterSection = styled.section`
   padding: ${props => props.theme.spacing.xxlarge} ${props => props.theme.spacing.large};
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: #000000;
   
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
     padding: ${props => props.theme.spacing.xlarge} ${props => props.theme.spacing.medium};

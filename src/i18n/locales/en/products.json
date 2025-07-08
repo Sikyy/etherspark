@@ -699,104 +699,32 @@
       ]
     },
     "home-1": {
-      "name": "Fan Collection BORK T782",
-      "description": "Efficient dual-sided toasting, intelligent temperature control system",
-      "specifications": {
-        "Size": "230mm * 270mm * 190mm",
-        "Weight": "2.8kg",
-        "Rated Power": "1500W",
-        "Material": "Stainless Steel + Tempered Glass",
-        "Color": "Cream White/Dark Gray/Brown",
-        "Operating Voltage": "220V/50Hz"
-      },
-      "colorOptions": {
-        "0": "Cream White",
-        "1": "Dark Gray",
-        "2": "Brown"
-      }
+      "name": "Smart Pet Feeder GF1",
+      "description": "Automatic pet feeding device with remote control support"
     },
     "home-2": {
-      "name": "Table Fan BORK P513",
-      "description": "Intelligent temperature control with silent design, remote control",
-      "specifications": {
-        "Size": "350mm * 320mm * 1100mm",
-        "Weight": "4.2kg",
-        "Rated Power": "45W",
-        "Material": "ABS + Metal Mesh",
-        "Color": "Black/White",
-        "Speed Levels": "9 levels"
-      },
-      "colorOptions": {
-        "0": "Black",
-        "1": "White"
-      }
+      "name": "Over-Ear Bluetooth Headphones EH1",
+      "description": "Hybrid active noise cancellation with up to 70 hours battery life"
     },
     "home-3": {
-      "name": "Air Purifier & Humidifier BORK A705",
-      "description": "Efficient purification, intelligent humidification, silent design",
-      "specifications": {
-        "Size": "320mm * 320mm * 650mm",
-        "Weight": "5.4kg",
-        "Water Tank Capacity": "5L",
-        "Rated Power": "40W",
-        "Filter Type": "HEPA + Activated Carbon",
-        "Applicable Area": "30-60m²"
-      }
+      "name": "Electric Scooter S2",
+      "description": "All-aluminum body, lightweight and durable design"
     },
     "home-4": {
-      "name": "Air Purifier & Humidifier BORK A802 RAIN",
-      "description": "Efficient purification, intelligent humidification, silent design",
-      "specifications": {
-        "Size": "370mm * 370mm * 700mm",
-        "Weight": "6.8kg",
-        "Water Tank Capacity": "7L",
-        "Rated Power": "65W",
-        "Filter Type": "HEPA H13 + Activated Carbon + Photocatalyst",
-        "Applicable Area": "50-90m²"
-      }
+      "name": "Laser Line Rangefinder LR1",
+      "description": "High-precision laser measurement, fast and accurate"
     },
     "home-5": {
-      "name": "Humidifier BORK H503",
-      "description": "Large capacity water tank, intelligent humidity control",
-      "specifications": {
-        "Size": "250mm * 250mm * 450mm",
-        "Weight": "3.2kg",
-        "Water Tank Capacity": "4.5L",
-        "Rated Power": "30W",
-        "Humidification Method": "Ultrasonic",
-        "Color": "Orange/Cream White",
-        "Applicable Area": "20-40m²"
-      },
-      "colorOptions": {
-        "0": "Orange",
-        "1": "Cream White"
-      }
+      "name": "Portable Bluetooth Speaker SP1",
+      "description": "4D bass surround sound, TWS connection, ultra-low latency"
     },
     "home-6": {
-      "name": "Sound Machine BORK HF700",
-      "description": "High-fidelity sound quality, smart voice control",
-      "specifications": {
-        "Size": "180mm * 180mm * 320mm",
-        "Weight": "2.4kg",
-        "Rated Power": "30W",
-        "Connection Method": "Bluetooth 5.0, WiFi, AUX",
-        "Frequency Response": "20Hz-20kHz",
-        "Battery Capacity": "4000mAh",
-        "Working Time": "8 hours"
-      }
+      "name": "Smart Pet Grooming Brush PC1",
+      "description": "Efficiently removes loose fur, reduces shedding issues"
     },
     "home-7": {
-      "name": "Autonomous Air Cleaning Station BORK V850",
-      "description": "Efficient filtration, intelligent control, silent design",
-      "specifications": {
-        "Size": "400mm * 350mm * 950mm",
-        "Weight": "8.5kg",
-        "Rated Power": "55W",
-        "Filter Type": "Triple Filtration System",
-        "Noise Level": "≤38dB",
-        "Applicable Area": "40-80m²",
-        "Battery Capacity": "5200mAh"
-      }
+      "name": "Multi-functional Car Charger MC1",
+      "description": "Fast charging technology, smart chip, stable power output"
     },
     "SP1": {
       "name": "Portable Bluetooth Speaker SP1",
@@ -973,68 +901,68 @@
         "防水等级": "IPX5"
       }
     },
-    "life-1": {
-      "name": "Smart Air Conditioner",
+    "MA1": {
+      "name": "MA1 Professional Hot Air Styler",
       "description": "Energy efficient, quiet operation, smart temperature control"
     },
-    "life-2": {
-      "name": "MD1 Smart Door Lock",
+    "MD1": {
+      "name": "MD1 High Speed Hair Dryer ",
       "description": "Automatic sensing, timer control, quiet motor"
     },
-    "life-3": {
-      "name": "MS1 Smart Security System",
+    "MS1": {
+      "name": "MS1 Professional Hair Straightener ",
       "description": "Multiple unlock methods, anti-theft alarm, remote control"
     },
-    "life-4": {
-      "name": "Smart Mattress",
+    "BD1": {
+      "name": "BD1 High Speed Hair Dryer ",
       "description": "Sleep monitoring, automatic hardness adjustment, constant temperature control"
     },
-    "life-5": {
-      "name": "Smart Curtains",
+    "BS1": {
+      "name": "BS1 Shaver",
       "description": "Automatic sensing, timer control, quiet motor"
     },
-    "life-6": {
-      "name": "Smart Scale",
+    "BS2": {
+      "name": "BS2 Travel Shaver",
       "description": "Multiple body index monitoring, data synchronization, health management"
     },
-    "life-7": {
-      "name": "Portable Massager",
+    "BC1": {
+      "name": "BC1 Hair Clipper",
       "description": "Multiple massage modes, relieves fatigue, portable design"
     },
-    "life-8": {
-      "name": "Smart Desk Lamp",
+    "BT1": {
+      "name": "BT1 Nose Hair Trimmer",
       "description": "Eye protection design, multi-level brightness adjustment, smart control"
     },
-    "life-9": {
-      "name": "Air Purifier",
+    "RI1": {
+      "name": "RI1 Rechargeable Curling Iron",
       "description": "Efficient filtration, quiet operation, air quality monitoring"
     },
-    "life-10": {
-      "name": "Smart Trash Can",
+    "RC1": {
+      "name": "RC1 Rechargeable Hot Straightening Comb",
       "description": "Automatic sensing, sealed deodorization, large capacity design"
     },
-    "life-11": {
-      "name": "Electric Toothbrush",
+    "RS1": {
+      "name": "RS1 Rechargeable Hair Straightener",
       "description": "Multiple cleaning modes, smart timing, long-lasting battery"
     },
-    "life-12": {
-      "name": "Smart Dishwasher",
+    "Life-S1": {
+      "name": "S1 Hair Straightener",
       "description": "High-temperature disinfection, water-saving design, multiple washing modes"
     },
-    "life-13": {
-      "name": "Portable Humidifier",
+    "E1": {
+      "name": "E1 Lady Epilator",
       "description": "Quiet design, large capacity water tank, suitable for home and office use"
     },
-    "life-14": {
-      "name": "Smart Flower Pot",
+    "P1": {
+      "name": "P1 Nail Polisher",
       "description": "Automatic watering, light monitoring, plant growth data recording"
     },
-    "life-15": {
-      "name": "Smart Fitness Equipment",
+    "Life-R1": {
+      "name": "R1 Callus Removal",
       "description": "Multiple training modes, data recording, smart assistance"
     },
-    "life-16": {
-      "name": "Smart Bracelet",
+    "OI1": {
+      "name": "OI1 Ultrasonic Toothbrush",
       "description": "Health monitoring, exercise tracking, message reminders"
     },
     "watch-1": {
@@ -1090,8 +1018,8 @@
     "watch-6": {
       "name": "BB1 Sports Wristband",
       "description": "Slim design, health monitoring, personalized watch faces",
-       "features": [
-        "1.57” color screen, full touch screen operation without buttons",
+      "features": [
+        "1.57-inch color screen, full touch screen operation without buttons",
         "Self developed intelligent health monitoring model,24-hour continuous heart rate monitoring (supporting HRV monitoring),Pressure monitoring,Blood oxygen monitoring,Sleep monitoring,Respiratory rate monitoring,PPG blood pressure monitoring,Menstrual tracking",
         "Multiple functional support,100+theme dials can be freely switched,100+sports mode data recording, automatic recognition of multiple sports modes,Multi scenario reminder functions such as call reminder, message reminder, and walking reminder",
         "Battery life exceeding 5 days"
